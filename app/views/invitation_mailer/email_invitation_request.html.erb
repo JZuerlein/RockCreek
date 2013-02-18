@@ -1,0 +1,10 @@
+InvitationMailer#email_Invitation_request
+
+<p><%= @invite_user.email %>,</p>
+
+<p>Thank you for signing up.  We do need to confirm that a valid email was entered, so please click on the link below to return to the site and complete the confirmation process.</p>
+
+<p><%=edit_invitation_confirmation_url(@invite_user.email_invitation_token) %></p>
+
+<p>Thank you,</p>
+<p>The Administrator</p>

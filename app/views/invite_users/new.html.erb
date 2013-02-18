@@ -1,0 +1,17 @@
+<h1>Invite Users</h1>
+
+<%= render 'form' %>
+
+<h2>Outstanding Invitations</h2>
+<table>
+  <tr><td>Email Address</td><td>Date Sent</td></tr>
+  <% @outstanding_invitations.each do |invite_user| %>
+      <tr>
+        <td><%= invite_user.email %></td>
+        <td><%= invite_user.email_invitation_sent_at %></td>
+
+        <td><%= link_to 'Destroy', invite_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>
+

@@ -1,0 +1,61 @@
+<h1>Sign Up</h1>
+<%= form_for @signup do |f| %>
+    <%if @signup.errors.any? %>
+        <div class="error_messages">
+          <h2>Form is invalid</h2>
+          <ul>
+            <% for message in @signup.errors.full_messages %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+<% end%>
+
+    <p>
+      <%= f.label :first_name %><br/>
+      <%= f.text_field :first_name %>
+    </p>
+    <p>
+      <%= f.label :last_name %><br/>
+      <%= f.text_field :last_name %>
+    </p>
+    <p>
+      <%= f.label :email %><br/>
+      <%= f.text_field :email %>
+    </p>
+    <p>
+      <%= f.label :company %><br/>
+      <%= f.text_field :company %>
+    </p>
+    <p>
+      <%= f.label :password %><br/>
+      <%= f.password_field :password %>
+    </p>
+    <p>
+      <%= f.label :password_confirmation %><br/>
+      <%= f.password_field :password_confirmation %>
+    </p>
+    <p>
+      <%= f.label :site_address %><br/>
+      <%= f.text_field :site_address %>
+    </p>
+
+    <p>
+      <%= f.label :credit_card %><br/>
+      <%= f.text_field :credit_card %>
+    </p>
+    <p>
+      <%= f.label :expires_on_month %><br/>
+      <%= f.text_field :expires_on_month %>
+    </p>
+    <p>
+      <%= f.label :expires_on_year %><br/>
+      <%= f.text_field :expires_on_year %>
+    </p>
+    <p>
+      <%= f.label :billing_zip %><br/>
+      <%= f.text_field :billing_zip %>
+    </p>
+    <p class="button"><%= f.submit %></p>
+
+<% end %>

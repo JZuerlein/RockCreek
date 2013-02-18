@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  \requester_id: 1
+  request_date: 2013-02-04
+  status: MyString
+  summary: MyString
+  description: MyString
+  change_type: MyString
+  assigned_to: 1
+  due_date: 2013-02-04
+
+two:
+  \requester_id: 1
+  request_date: 2013-02-04
+  status: MyString
+  summary: MyString
+  description: MyString
+  change_type: MyString
+  assigned_to: 1
+  due_date: 2013-02-04

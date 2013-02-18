@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subdomain: MyString
+  email: MyString
+  email_invitation_token: MyString
+  email_invitation_sent_at: 2013-02-04
+
+two:
+  subdomain: MyString
+  email: MyString
+  email_invitation_token: MyString
+  email_invitation_sent_at: 2013-02-04

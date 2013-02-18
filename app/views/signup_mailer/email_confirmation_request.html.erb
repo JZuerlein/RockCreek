@@ -1,0 +1,10 @@
+SignupMailer#email_confirmation_request
+
+<p><%= @signup.first_name %>,</p>
+
+<p>Thank you for signing up.  We do need to confirm that a valid email was entered, so please click on the link below to return to the site and complete the confirmation process.</p>
+
+<p><%=edit_signup_url(@signup.email_confirmation_token) %></p>
+
+<p>Thank you,</p>
+<p>The Administrator</p>

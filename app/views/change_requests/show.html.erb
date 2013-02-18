@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Requester:</b>
+  <%= @change_request.requester_id %>
+</p>
+
+<p>
+  <b>Request date:</b>
+  <%= @change_request.request_date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @change_request.status %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @change_request.summary %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @change_request.description %>
+</p>
+
+<p>
+  <b>Change type:</b>
+  <%= @change_request.change_type %>
+</p>
+
+<p>
+  <b>Assigned to:</b>
+  <%= @change_request.assigned_to %>
+</p>
+
+<p>
+  <b>Due date:</b>
+  <%= @change_request.due_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_change_request_path(@change_request) %> |
+<%= link_to 'Back', change_requests_path %>

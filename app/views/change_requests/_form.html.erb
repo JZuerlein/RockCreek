@@ -1,0 +1,49 @@
+<%= form_for(@change_request) do |f| %>
+  <% if @change_request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@change_request.errors.count, "error") %> prohibited this change_request from being saved:</h2>
+
+      <ul>
+      <% @change_request.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :requester_id %><br />
+    <%= f.number_field :requester_id %>
+  </div>
+  <div class="field">
+    <%= f.label :request_date %><br />
+    <%= f.date_select :request_date %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :summary %><br />
+    <%= f.text_field :summary %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :change_type %><br />
+    <%= f.text_field :change_type %>
+  </div>
+  <div class="field">
+    <%= f.label :assigned_to %><br />
+    <%= f.number_field :assigned_to %>
+  </div>
+  <div class="field">
+    <%= f.label :due_date %><br />
+    <%= f.date_select :due_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
