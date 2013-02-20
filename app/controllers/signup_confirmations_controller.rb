@@ -20,7 +20,7 @@ class SignupConfirmationsController < ApplicationController
     # set the confirmed field on the user record.
     @user = User.find_by_email!(@signup.email)
     if @user.update_attributes(:tenant_id => @tenant.id, :first_name => @signup.first_name, :last_name => @signup.last_name, :confirmed => TRUE)
-      #session[:user_id] = @user.id
+      session[:user_id] = @user.id
       #current_user
       redirect_to root_url(subdomain: @tenant.subdomain) +"/signup_confirmations/show.html"
     else

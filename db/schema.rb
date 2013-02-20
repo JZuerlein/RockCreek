@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130211233626) do
+ActiveRecord::Schema.define(:version => 20130220173905) do
 
   create_table "change_requests", :force => true do |t|
     t.integer  "requester_id"
@@ -29,6 +29,12 @@ ActiveRecord::Schema.define(:version => 20130211233626) do
 
   add_index "change_requests", ["tenant_id"], :name => "index_change_requests_on_tenant_id"
 
+  create_table "groups", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "invite_users", :force => true do |t|
     t.string   "subdomain"
     t.string   "email"
@@ -40,15 +46,17 @@ ActiveRecord::Schema.define(:version => 20130211233626) do
     t.string   "last_name"
     t.string   "password"
     t.string   "password_confirmation"
+    t.integer  "tenant_id"
   end
+
+  add_index "invite_users", ["tenant_id"], :name => "index_invite_users_on_tenant_id"
 
   create_table "signups", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
     t.string   "company"
-    t.string   "password_hash"
-    t.string   "password_salt"
+    t.string   "password_digest"
     t.string   "site_address"
     t.string   "credit_card"
     t.integer  "expires_on_month"
@@ -66,6 +74,16 @@ ActiveRecord::Schema.define(:version => 20130211233626) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "user_group_assignments", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "tenant_id"
+  end
+
+  add_index "user_group_assignments", ["tenant_id"], :name => "index_user_group_assignments_on_tenant_id"
 
   create_table "users", :force => true do |t|
     t.string   "email"

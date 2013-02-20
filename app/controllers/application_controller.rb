@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  #around_filter :scope_current_tenant
+  around_filter :scope_current_tenant
 
   private
 

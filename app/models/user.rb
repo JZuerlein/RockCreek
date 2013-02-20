@@ -4,4 +4,11 @@ class User < ActiveRecord::Base
   has_secure_password
   validates_presence_of :password, :on => :create
 
+  has_many :user_group_assignments
+  has_many :groups, through: :user_group_assignments
+
+  def full_name
+    [first_name, last_name].compact.join(' ')
+  end
+
 end

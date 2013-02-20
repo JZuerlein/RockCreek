@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :requester_id %><br />
-    <%= f.number_field :requester_id %>
+    <%= f.collection_select :requester_id, User.find_all_by_tenant_id(Tenant.current_id).sort_by(&:full_name), :id, :full_name, include_blank: false %>
   </div>
   <div class="field">
     <%= f.label :request_date %><br />
@@ -37,7 +37,7 @@
   </div>
   <div class="field">
     <%= f.label :assigned_to %><br />
-    <%= f.number_field :assigned_to %>
+    <%= f.collection_select :assigned_to, User.find_all_by_tenant_id(Tenant.current_id).sort_by(&:full_name), :id, :full_name, include_blank: false %>
   </div>
   <div class="field">
     <%= f.label :due_date %><br />

@@ -1,0 +1,35 @@
+<%= form_for(@user) do |f| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this change_request from being saved:</h2>
+
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <h2><%= @user.full_name %> (<%= @user.email %>)</h2>
+
+    <div class="field">
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name %>
+    </div>
+    <div class="field">
+      <%= f.label :last_name %><br />
+      <%= f.text_field :last_name %>
+    </div>
+    <div class="field">
+      <%=  hidden_field_tag "user[group_ids][]", null %>
+      <% group.all.each do |group| %>
+         <%=  check_box_tag "user[group_ids][]", group_id, @user.group_ids.include?(group.id), id: dom_id(group) %>
+          <%= label_tag dom_id(group), group.name %><br>
+      <% end %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

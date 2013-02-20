@@ -79,4 +79,8 @@ class ChangeRequestsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def user_list
+    User.find_all_by_tenant_id(Tenant.current_id)
+  end
 end

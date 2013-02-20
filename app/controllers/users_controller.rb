@@ -11,4 +11,12 @@ class UsersController < ApplicationController
       render "new"
     end
   end
+
+  def index
+    @users = User.all
+
+    respond_to do |format|
+      format.html # show.html.erb      format.json { render json: @change_requests }
+    end
+  end
 end
