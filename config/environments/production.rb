@@ -19,7 +19,7 @@ RockCreek::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-
+  config.action_mailer.default_url_options = { :host => 'glacial-ravine-4100.herokuapp.com' }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
