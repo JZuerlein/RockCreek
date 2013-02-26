@@ -18,13 +18,13 @@
       <%= f.text_field :first_name %>
     </div>
     <div class="field">
-      <%= f.label :last_name %><br />
+      <%= f.label :last_name %>
       <%= f.text_field :last_name %>
     </div>
     <div class="field">
-      <%=  hidden_field_tag "user[group_ids][]", null %>
-      <% group.all.each do |group| %>
-         <%=  check_box_tag "user[group_ids][]", group_id, @user.group_ids.include?(group.id), id: dom_id(group) %>
+      <%=  hidden_field_tag "user[group_ids][]", nil %>
+      <% Group.all.each do |group| %>
+         <%=  check_box_tag "user[group_ids][]", group.id, @user.group_ids.include?(group.id), id: dom_id(group) %>
           <%= label_tag dom_id(group), group.name %><br>
       <% end %>
     </div>

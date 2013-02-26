@@ -1,0 +1,21 @@
+<h2><%= @user.full_name %> (<%= @user.email %>)</h2>
+
+<p>
+  <b>First Name: </b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Last Name: </b>
+  <%= @user.last_name %>
+</p>
+
+<b>Group Memberships:</b>
+<ul>
+  <% @user.groups.each do |group| %>
+  <li><%= group.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', user_path %>

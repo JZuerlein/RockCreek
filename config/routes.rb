@@ -3,17 +3,6 @@ RockCreek::Application.routes.draw do
 
 
   get "signup_confirmations/new"
-
-  #get "signups/new"
-
-  #get "sessions/new"
-
-  #get "sessions/create"
-
-  #get "sessions/destroy"
-
-  #get "users/new"
-
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "signups#new", :as => "signup"

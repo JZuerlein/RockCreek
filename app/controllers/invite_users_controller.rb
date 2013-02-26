@@ -12,6 +12,7 @@ class InviteUsersController < ApplicationController
   def create
     @invite_user = InviteUser.new(params[:invite_user])
     @invite_user.subdomain = current_tenant.subdomain
+    @invite_user.tenant_id = Tenant.current_id
 
     if @invite_user.save
         @invite_user.send_invitation_request

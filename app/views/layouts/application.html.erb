@@ -17,6 +17,15 @@
             <%= link_to "Log in", login_path %>
         <% end %>
       </div>
+      <div id="commands">
+        <% if current_user %>
+            <% if is_member_of_admin %>
+                <%= link_to 'Invite Users', new_invite_user_path %>
+                <%= link_to 'Edit Users', users_path %>
+            <% end %>
+            <%= link_to 'Create Change Request', new_change_request_path %>
+        <% end %>
+      </div>
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
