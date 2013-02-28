@@ -1,11 +1,5 @@
 <h1>ChangeControl Dashboard</h1>
 
-<div class="global_links">
-  <%= link_to 'Invite Users', new_invite_user_path %>
-  <%= link_to 'Edit Users', users_path %>
-  <%= link_to 'Create Change Request', new_change_request_path %>
-</div>
-
 <table>
   <tr>
     <th></th>
@@ -21,9 +15,15 @@
         <td><%= change_request.change_type %></td>
         <td><%= change_request.assigned_to %></td>
         <td><%= change_request.due_date %></td>
-        <td><%= link_to 'Show', change_request %></td>
-        <td><%= link_to 'Edit', edit_change_request_path(change_request) %></td>
-        <td><%= link_to 'Destroy', change_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if allow? "change_requests", "show" %>
+            <td><%= link_to 'Show', change_request %></td>
+        <% end %>
+        <% if allow? "change_requests", "edit", change_request%>
+            <td><%= link_to 'Edit', edit_change_request_path(change_request) %></td>
+        <% end %>
+        <% if allow? "change_requests", "destroy" %>
+            <td><%= link_to 'Destroy', change_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
   <% end %>
 </table>

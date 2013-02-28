@@ -47,10 +47,10 @@ test:
   password:
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database:dabhoth11dm5ab
-  pool: 5
-  port: 5432
-  username: vsqbyybymcvzxv
-  password: GKdvvFSrZI6aDhuxALMuVnOwVS
+  #adapter: postgresql
+  #encoding: unicode
+  #database:dabhoth11dm5ab
+  #pool: 5
+  #port: 5432
+  #username: vsqbyybymcvzxv
+  #password: GKdvvFSrZI6aDhuxALMuVnOwVS

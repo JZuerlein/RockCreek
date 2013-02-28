@@ -15,13 +15,8 @@ class User < ActiveRecord::Base
     group_ids.include?(1)
   end
 
-  def is_member_of(group_name)
-    for group in groups
-      if group.name == group_name
-        true
-      end
-    end
-    false
+  def is_member_of_change_control
+    group_ids.include?(2)
   end
 
 end

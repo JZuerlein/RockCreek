@@ -12,7 +12,7 @@ class ChangeRequestsController < ApplicationController
   # GET /change_requests/1
   # GET /change_requests/1.json
   def show
-    @change_request = ChangeRequest.find(params[:id])
+    @change_request = current_resource
 
     respond_to do |format|
       format.html # show.html.erb
@@ -33,7 +33,7 @@ class ChangeRequestsController < ApplicationController
 
   # GET /change_requests/1/edit
   def edit
-    @change_request = ChangeRequest.find(params[:id])
+    @change_request = current_resource
   end
 
   # POST /change_requests
@@ -43,6 +43,13 @@ class ChangeRequestsController < ApplicationController
 
     respond_to do |format|
       if @change_request.save
+
+        #Add the ChangeResponses to the change request
+        UserGroupAssignment.find_all_by_group_id(2).each do |user_group_assignment|
+          @request_response = RequestResponse.new(:user_id => user_group_assignment.user_id, :change_request_id => @change_request.id)
+          @request_response.save
+        end
+
         format.html { redirect_to @change_request, notice: 'Change request was successfully created.' }
         format.json { render json: @change_request, status: :created, location: @change_request }
       else
@@ -55,7 +62,7 @@ class ChangeRequestsController < ApplicationController
   # PUT /change_requests/1
   # PUT /change_requests/1.json
   def update
-    @change_request = ChangeRequest.find(params[:id])
+    @change_request = current_resource
 
     respond_to do |format|
       if @change_request.update_attributes(params[:change_request])
@@ -71,7 +78,7 @@ class ChangeRequestsController < ApplicationController
   # DELETE /change_requests/1
   # DELETE /change_requests/1.json
   def destroy
-    @change_request = ChangeRequest.find(params[:id])
+    @change_request = current_resource      #change to current_resource
     @change_request.destroy
 
     respond_to do |format|
@@ -82,5 +89,9 @@ class ChangeRequestsController < ApplicationController
 
   def user_list
     User.find_all_by_tenant_id(Tenant.current_id)
+  end
+
+  def current_resource
+    @current_resource ||= ChangeRequest.find(params[:id]) if params[:id]
   end
 end

@@ -1,4 +1,6 @@
 class InviteUsersController < ApplicationController
+  before_filter :authorize, only: :edit
+
 
   # GET /invite_users/new
   # GET /invite_users/new.json
@@ -22,5 +24,7 @@ class InviteUsersController < ApplicationController
         render "new"
     end
   end
+
+
 
 end

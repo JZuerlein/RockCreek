@@ -2,10 +2,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   around_filter :scope_current_tenant
-  #before_filter :authorize
+  before_filter :authorize
 
   delegate :allow?, to: :current_permission
   helper_method :allow?
+
+  delegate :allow_param?, to: :current_permission
+  helper_method :allow_param?
 
   private
 
@@ -24,8 +27,12 @@ class ApplicationController < ActionController::Base
   end
   helper_method :is_member_of_admin
 
+  def current_resource
+    nil
+  end
+
   def authorize
-    if !current_permission.allow?(params[:controller], params[:action])
+    if !current_permission.allow?(params[:controller], params[:action], current_resource)
       redirect_to root_url, alert: "Not authorized."
     end
   end

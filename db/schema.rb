@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130220173905) do
+ActiveRecord::Schema.define(:version => 20130228165833) do
 
   create_table "change_requests", :force => true do |t|
     t.integer  "requester_id"
@@ -50,6 +50,19 @@ ActiveRecord::Schema.define(:version => 20130220173905) do
   end
 
   add_index "invite_users", ["tenant_id"], :name => "index_invite_users_on_tenant_id"
+
+  create_table "request_responses", :force => true do |t|
+    t.string   "response"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.integer  "tenant_id"
+    t.integer  "user_id"
+    t.integer  "change_request_id"
+  end
+
+  add_index "request_responses", ["change_request_id"], :name => "index_request_responses_on_change_request_id"
+  add_index "request_responses", ["tenant_id"], :name => "index_request_responses_on_tenant_id"
+  add_index "request_responses", ["user_id"], :name => "index_request_responses_on_user_id"
 
   create_table "signups", :force => true do |t|
     t.string   "first_name"
