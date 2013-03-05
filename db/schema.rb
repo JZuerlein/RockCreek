@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130228165833) do
+ActiveRecord::Schema.define(:version => 20130304180244) do
 
   create_table "change_requests", :force => true do |t|
     t.integer  "requester_id"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(:version => 20130228165833) do
   end
 
   add_index "change_requests", ["tenant_id"], :name => "index_change_requests_on_tenant_id"
+
+  create_table "change_types", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "name"
+  end
 
   create_table "groups", :force => true do |t|
     t.string   "name"
@@ -79,6 +85,12 @@ ActiveRecord::Schema.define(:version => 20130228165833) do
     t.datetime "updated_at",                 :null => false
     t.string   "email_confirmation_token"
     t.datetime "email_confirmation_sent_at"
+  end
+
+  create_table "statuses", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "name"
   end
 
   create_table "tenants", :force => true do |t|

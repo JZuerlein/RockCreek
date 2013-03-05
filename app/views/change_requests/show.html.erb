@@ -1,45 +1,68 @@
-<p id="notice"><%= notice %></p>
+<%= form_for(@change_request) do |f| %>
+    <% if @change_request.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@change_request.errors.count, "error") %> prohibited this change_request from being saved:</h2>
 
-<p>
-  <b>Requester:</b>
-  <%= @change_request.requester_id %>
-</p>
+          <ul>
+            <% @change_request.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
-<p>
-  <b>Request date:</b>
-  <%= @change_request.request_date %>
-</p>
+    </p>
+    <div class="field">
+      <%= f.label :requester_name %><br />
+      <%= f.text_field :requester_name, :disabled => true%>
+    </div>
+    <div class="field">
+      <%= f.label :request_date %><br />
+      <%= f.date_select :request_date, :disabled => true%>
+    </div>
+    <div class="field">
+      <%= f.label :status %><br />
+      <%= f.text_field :status, :disabled => true %>
+    </div>
+    <div class="field">
+      <%= f.label :summary %><br />
+      <%= f.text_field :summary, :disabled => true%>
+    </div>
+    <div class="field">
+      <%= f.label :description %><br />
+      <%= f.text_area :description, :size => "50x10", :disabled => true %>
+    </div>
+    <div class="field">
+      <%= f.label :change_type %><br />
+      <%= f.text_field :change_type, :disabled => true %>
+    </div>
+    <div class="field">
+      <%= f.label :assigned_to %><br />
+      <%= f.text_field :assigned_to_name, :disabled => true%>
+    </div>
+    <div class="field">
+      <%= f.label :due_date %><br />
+      <%= f.date_select :due_date, :disabled => true %>
+    </div>
+    <div class="field">
+      Responses:
+      <ul>
+        <% @change_request.request_responses.each do |request_response| %>
+            <li>
+              <% if request_response.response != nil %>
+                  <%= User.find_by_id(request_response.user_id).full_name + "'s response was " + request_response.response + "."  %>
+              <% else %>
+                  <%= User.find_by_id(request_response.user_id).full_name + " has not responded yet." %>
+              <% end %>
+            </li>
+        <% end %>
+      </ul>
+    </div>
 
-<p>
-  <b>Status:</b>
-  <%= @change_request.status %>
-</p>
+    <div class="field">
 
-<p>
-  <b>Summary:</b>
-  <%= @change_request.summary %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @change_request.description %>
-</p>
-
-<p>
-  <b>Change type:</b>
-  <%= @change_request.change_type %>
-</p>
-
-<p>
-  <b>Assigned to:</b>
-  <%= @change_request.assigned_to %>
-</p>
-
-<p>
-  <b>Due date:</b>
-  <%= @change_request.due_date %>
-</p>
-
+    </div>
+<% end %>
 
 <%= link_to 'Edit', edit_change_request_path(@change_request) %> |
 <%= link_to 'Back', change_requests_path %>

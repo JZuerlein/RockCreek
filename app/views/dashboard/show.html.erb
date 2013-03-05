@@ -2,18 +2,23 @@
 
 <table>
   <tr>
-    <th></th>
+    <td>Requester</td>
+    <td>Request Date</td>
+    <td>Status</td>
+    <td>Summary</td>
+    <td>Change Type</td>
+    <td>Assigned To</td>
+    <td>Due Date</td>
   </tr>
 
   <% @change_requests.each do |change_request| %>
       <tr>
-        <td><%= change_request.requester_id %></td>
+        <td><%= change_request.requester_name %></td>
         <td><%= change_request.request_date %></td>
         <td><%= change_request.status %></td>
         <td><%= change_request.summary %></td>
-        <td><%= change_request.description %></td>
         <td><%= change_request.change_type %></td>
-        <td><%= change_request.assigned_to %></td>
+        <td><%= change_request.assigned_to_name %></td>
         <td><%= change_request.due_date %></td>
         <% if allow? "change_requests", "show" %>
             <td><%= link_to 'Show', change_request %></td>
@@ -24,8 +29,20 @@
         <% if allow? "change_requests", "destroy" %>
             <td><%= link_to 'Destroy', change_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
+        <% if allow? "change_requests", "edit", change_request %>
+             <% change_request.request_responses.each do |request_response| %>
+                <% if request_response.user_id == current_user.id && request_response.response == nil %>
+                    <td><%=  link_to 'Approve', edit_request_response_path(:id => request_response.id, :response => "Approve") %></td>
+                    <td><%=  link_to 'Deny', edit_request_response_path(:id => request_response.id, :response => "Deny") %></td>
+                <% end %>
+                <% if request_response.user_id == current_user.id && request_response.response == "Approve" %>
+                    <td><%=  link_to 'Deny', edit_request_response_path(:id => request_response.id, :response => "Deny") %></td>
+                <% end %>
+                <% if request_response.user_id == current_user.id && request_response.response == "Deny" %>
+                    <td><%=  link_to 'Approve', edit_request_response_path(:id => request_response.id, :response => "Approve") %></td>
+                <% end %>
+            <% end %>
+        <% end %>
       </tr>
   <% end %>
 </table>
-
-<br />

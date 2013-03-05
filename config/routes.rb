@@ -1,4 +1,10 @@
 RockCreek::Application.routes.draw do
+  resources :change_types
+
+
+  resources :statuses
+
+
   resources :change_requests
 
 
@@ -16,6 +22,7 @@ RockCreek::Application.routes.draw do
   resources :dashboard
   resources :invite_users
   resources :invitation_confirmations
+  resources :request_response
 
 
 

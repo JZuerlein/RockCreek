@@ -10,6 +10,8 @@ class Permission
       allow :change_requests, [:edit, :update] do |change_request|
         change_request.requester_id == user.id
       end
+      allow :request_response, [:edit, :show, :new, :create, :update, :index] if user.is_member_of_change_control
+
       allow :dashboard, [:show]
       allow_all if user.is_member_of_admin
     end
