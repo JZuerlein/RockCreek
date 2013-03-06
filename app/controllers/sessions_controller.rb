@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-
+      puts "Ready to redirect to subdomain."
       redirect_to root_url(:subdomain => user.tenant.subdomain) + "dashboard/show.html"
     else
       flash.now.alert = "Invalid email or password"
