@@ -4,6 +4,8 @@ class Permission
     allow :users, [:new, :create]
     allow :sessions, [:new, :create, :destroy]
     allow :home, [:index]
+    allow :signups, [:new, :create, :edit]
+    allow :signup_confirmations, [:edit, :update, :show]
     if user
       #allow :users, [:edit, :update]           Only ADMINs should be able to edit.
       allow :change_requests, [:index, :show, :new, :create]
