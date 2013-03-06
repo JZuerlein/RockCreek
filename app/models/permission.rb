@@ -1,6 +1,12 @@
 class Permission
 
   def initialize(user)
+    if (user != nil)
+      puts "PERMISSION-INITIALIZE user_id = " + user.user_id.to_s
+    else
+      puts "PERMISSION-INITIALIZE user is nil."
+    end
+
     allow :users, [:new, :create]
     allow :sessions, [:new, :create, :destroy]
     allow :home, [:index]
