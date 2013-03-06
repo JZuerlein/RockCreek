@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   def current_user
     ## @ means it is an instance variable
     if (session[:user_id] != nil)
-      puts "IN APP_CONTROLLER-CURRENT_USER session[:user_id] : "  + session[:user_id]
+      puts "IN APP_CONTROLLER-CURRENT_USER session[:user_id] : "  + session[:user_id].to_s
     else
       puts "IN APP_CONTROLLER-CURRENT_USER session[:user_id] = nil"
     end
