@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RockCreek.iws" />
@@ -15,7 +15,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362067408324" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361896790562" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362580978565" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362581241146" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361305915004" ignored="false" />
@@ -83,28 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="2" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="31" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.6435185">
+            <state line="1" column="23" selection-start="76" selection-end="76" vertical-scroll-proportion="0.031390134">
               <folding />
             </state>
           </provider>
@@ -113,7 +95,16 @@
       <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="63" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
+            <state line="19" column="95" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="54" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,8 +195,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/permission.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
   </component>
@@ -754,7 +745,11 @@
       <created>1362580983276</created>
       <updated>1362580983276</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated Connection String for production.&#10;">
+      <created>1362581243457</created>
+      <updated>1362581243457</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -839,7 +834,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Looking for alert_flash solution.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Connection String for production.&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -860,6 +855,7 @@
     <MESSAGE value="Work done on approval process&#10;&#10;" />
     <MESSAGE value="Updated permissions so signups would work.&#10;&#10;" />
     <MESSAGE value="Looking for alert_flash solution.&#10;" />
+    <MESSAGE value="Updated Connection String for production.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -911,13 +907,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/change_request.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/change_types/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -960,13 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="63" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="91" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
@@ -1002,23 +984,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="2" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+        <state line="43" column="53" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.38425925">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5650224">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="31" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.6435185">
+        <state line="19" column="95" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="54" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="23" selection-start="76" selection-end="76" vertical-scroll-proportion="0.031390134">
           <folding />
         </state>
       </provider>
