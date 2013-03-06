@@ -22,6 +22,12 @@ class SignupConfirmationsController < ApplicationController
     if @user.update_attributes(:tenant_id => @tenant.id, :first_name => @signup.first_name, :last_name => @signup.last_name, :confirmed => TRUE)
       session[:user_id] = @user.id
       #current_user
+
+      #user_group_assignments
+      #the first user to a subdomain should be an administrator.
+      @assignment = UserGroupAssignment.new(:user_id => @user.id, :group_id => 1, :tenant_id => @tenant.id)
+      @assignment.save
+
       redirect_to root_url(subdomain: @tenant.subdomain) +"/signup_confirmations/show.html"
     else
       render :edit
