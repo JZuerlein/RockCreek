@@ -15,7 +15,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362587772429" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361896790562" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362587554097" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362587779443" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361305915004" ignored="false" />
@@ -77,7 +77,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="82" selection-start="604" selection-end="604" vertical-scroll-proportion="0.3902027">
+            <state line="16" column="63" selection-start="428" selection-end="428" vertical-scroll-proportion="0.2483108">
               <folding />
             </state>
           </provider>
@@ -840,7 +840,11 @@
       <created>1362587558442</created>
       <updated>1362587558442</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Adding some logging.&#10;">
+      <created>1362587782352</created>
+      <updated>1362587782352</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1109,7 +1113,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="82" selection-start="604" selection-end="604" vertical-scroll-proportion="0.3902027">
+        <state line="16" column="63" selection-start="428" selection-end="428" vertical-scroll-proportion="0.2483108">
           <folding />
         </state>
       </provider>

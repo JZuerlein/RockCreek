@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
 
   def current_user
     ## @ means it is an instance variable
-    puts "IN APP_CONTROLLER-CURRENT_USER session[:user_id] : " + session[:user_id]
+    puts "IN APP_CONTROLLER-CURRENT_USER session[:user_id] : " #{ + session[:user_id]}"
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
     if (@current_user != nil)
       puts "current_user is : " + @current_user.email
