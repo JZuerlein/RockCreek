@@ -27,6 +27,7 @@ class ApplicationController < ActionController::Base
   end
   helper_method :is_member_of_admin
 
+
   def current_resource
     nil
   end
