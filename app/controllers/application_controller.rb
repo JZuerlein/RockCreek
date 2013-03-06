@@ -14,18 +14,7 @@ class ApplicationController < ActionController::Base
 
   def current_user
     ## @ means it is an instance variable
-    if (session[:user_id] != nil)
-      puts "IN APP_CONTROLLER-CURRENT_USER session[:user_id] : "  + session[:user_id].to_s
-    else
-      puts "IN APP_CONTROLLER-CURRENT_USER session[:user_id] = nil"
-    end
-
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
-    if (@current_user != nil)
-      puts "current_user is : " + @current_user.email
-
-    end
-
   end
   helper_method :current_user
 
@@ -44,7 +33,9 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
-    if !current_permission.allow?(params[:controller], params[:action], current_resource)
+    if current_permission.allow?(params[:controller], params[:action], current_resource)
+      current_permission.permit_params! params
+    else
       redirect_to root_url, alert: "Not authorized."
     end
   end

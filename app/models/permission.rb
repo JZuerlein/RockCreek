@@ -1,11 +1,11 @@
 class Permission
 
   def initialize(user)
-    if (user != nil)
-      puts "PERMISSION-INITIALIZE user_id = " + user.user_id.to_s
-    else
-      puts "PERMISSION-INITIALIZE user is nil."
-    end
+    #if (user != nil)
+     # puts "PERMISSION-INITIALIZE user_id = " + user.user_id.to_s
+    #else
+    #  puts "PERMISSION-INITIALIZE user is nil."
+    #end
 
     allow :users, [:new, :create]
     allow :sessions, [:new, :create, :destroy]
@@ -72,7 +72,7 @@ class Permission
   def permit_params!(params)
     if @allow_all
       params.permit!
-    elseif @allowed_params
+    elsif @allowed_params
       @allowed_params.each do |resource, attributes|
         if params[resource].respond_to? :permit
           params[resource] = params[resource].permit(*attributes)

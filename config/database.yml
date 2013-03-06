@@ -47,10 +47,10 @@ test:
   password:
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database:deinqhm2ndodjg
-  pool: 5
-  port: 5432
-  username: axgskmxuuallcu
-  password: Xd31HS1N5O4tojIExGHx2mMuy7
+  #adapter: postgresql
+  #encoding: unicode
+  #database:deinqhm2ndodjg
+  #pool: 5
+  #port: 5432
+  #username: axgskmxuuallcu
+  #password: Xd31HS1N5O4tojIExGHx2mMuy7
