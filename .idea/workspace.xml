@@ -7,7 +7,7 @@
     </list>
     <ignored path="RockCreek.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/session_store.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362586420439" ignored="false" />
+    <file path="/session_store.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362590591948" ignored="false" />
     <file path="/sessions_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362589949991" ignored="false" />
     <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362085032794" ignored="false" />
     <file path="/signup_confirmations_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360624904798" ignored="false" />
@@ -15,7 +15,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362588141920" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361896790562" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362589958898" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362590304484" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361305915004" ignored="false" />
@@ -103,7 +103,7 @@
       <file leaf-file-name="session_store.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="90" selection-start="558" selection-end="558" vertical-scroll-proportion="0.2837838">
+            <state line="8" column="102" selection-start="563" selection-end="563" vertical-scroll-proportion="0.2837838">
               <folding />
             </state>
           </provider>
@@ -845,7 +845,11 @@
       <created>1362589962240</created>
       <updated>1362589962240</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Updated the session_store.rb&#10;&#10;">
+      <created>1362590306472</created>
+      <updated>1362590306472</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -930,7 +934,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some logging.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the session_store.rb&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -956,6 +960,7 @@
     <MESSAGE value="Uncommented out protect_from_forgery TESTING&#10;" />
     <MESSAGE value="Modified the session_store.rb file to point to mychangecontrol domain.&#10;" />
     <MESSAGE value="Adding some logging.&#10;" />
+    <MESSAGE value="Updated the session_store.rb&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,7 +1119,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="90" selection-start="558" selection-end="558" vertical-scroll-proportion="0.2837838">
+        <state line="8" column="102" selection-start="563" selection-end="563" vertical-scroll-proportion="0.2837838">
           <folding />
         </state>
       </provider>
