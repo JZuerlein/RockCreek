@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="Forgot to add stuff to GIT.&#10;">
+    <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -12,10 +12,10 @@
     <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362598045180" ignored="false" />
     <file path="/signup_confirmations_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601306835" ignored="false" />
     <file path="/user.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362083112888" ignored="false" />
-    <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362621196385" ignored="false" />
+    <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362621702759" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361896790562" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362620841361" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362621203315" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601907545" ignored="false" />
@@ -105,7 +105,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="107" selection-start="292" selection-end="292" vertical-scroll-proportion="0.25925925">
+            <state line="25" column="79" selection-start="851" selection-end="851" vertical-scroll-proportion="0.44907406">
               <folding />
             </state>
           </provider>
@@ -114,7 +114,7 @@
       <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="9" selection-start="940" selection-end="1029" vertical-scroll-proportion="0.0">
+            <state line="15" column="83" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -847,7 +847,11 @@
       <created>1362602107073</created>
       <updated>1362602107073</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Forgot to add stuff to GIT.&#10;">
+      <created>1362621208539</created>
+      <updated>1362621208539</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1003,11 +1007,6 @@
           <line>21</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/application_controller.rb</url>
-          <line>40</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="72" />
     </breakpoint-manager>
@@ -1113,14 +1112,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="9" selection-start="940" selection-end="1029" vertical-scroll-proportion="0.0">
+        <state line="15" column="83" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="107" selection-start="292" selection-end="292" vertical-scroll-proportion="0.25925925">
+        <state line="25" column="79" selection-start="851" selection-end="851" vertical-scroll-proportion="0.44907406">
           <folding />
         </state>
       </provider>
