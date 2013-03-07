@@ -15,6 +15,11 @@ class ApplicationController < ActionController::Base
   def current_user
     ## @ means it is an instance variable
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    if session[:user_id] && @current_user == nil
+      session[:user_id] = nil
+      reset_session
+      redirect_to root_url(:host => request.domain), :notice => "Invalid Session Found!"
+    end
   end
   helper_method :current_user
 
