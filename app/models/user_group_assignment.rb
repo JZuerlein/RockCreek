@@ -1,5 +1,5 @@
 class UserGroupAssignment < ActiveRecord::Base
-  attr_accessible :group_id, :user_id
+  attr_accessible :group_id, :user_id, :tenant_id
   belongs_to :user
   belongs_to :group
 
