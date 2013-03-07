@@ -15,7 +15,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361896790562" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362621730249" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625551837" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601907545" ignored="false" />
@@ -105,7 +105,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="4" selection-start="861" selection-end="861" vertical-scroll-proportion="0.5462963">
+            <state line="28" column="59" selection-start="960" selection-end="960" vertical-scroll-proportion="0.5787037">
               <folding />
             </state>
           </provider>
@@ -855,7 +855,11 @@
       <created>1362621733465</created>
       <updated>1362621733465</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Fixing problems around invalid user_id in session.&#10;">
+      <created>1362625557216</created>
+      <updated>1362625557216</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1124,7 +1128,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="861" selection-end="861" vertical-scroll-proportion="0.5462963">
+        <state line="28" column="59" selection-start="960" selection-end="960" vertical-scroll-proportion="0.5787037">
           <folding />
         </state>
       </provider>

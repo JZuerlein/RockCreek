@@ -22,6 +22,7 @@ class ApplicationController < ActionController::Base
         puts "APPLICATION_CONTROLLER-CURRENT_USER : session[:user_id] = " + session[:user_id].to_s
         session[:user_id] = nil
         reset_session
+        puts "APPLICATION_CONTROLLER-CURRENT_USER : session[:user_id] = " + session[:user_id].to_s
         redirect_to root_url(:host => request.domain), :notice => "Invalid Session Found!"
       end
     end
