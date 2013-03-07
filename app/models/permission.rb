@@ -1,17 +1,12 @@
 class Permission
 
   def initialize(user)
-    #if (user != nil)
-     # puts "PERMISSION-INITIALIZE user_id = " + user.user_id.to_s
-    #else
-    #  puts "PERMISSION-INITIALIZE user is nil."
-    #end
-
     allow :users, [:new, :create]
     allow :sessions, [:new, :create, :destroy]
     allow :home, [:index]
     allow :signups, [:new, :create, :edit]
     allow :signup_confirmations, [:edit, :update, :show]
+    allow :invitation_confirmations, [:edit, :update]
     if user
       #allow :users, [:edit, :update]           Only ADMINs should be able to edit.
       allow :change_requests, [:index, :show, :new, :create]
