@@ -3,8 +3,8 @@
 <p>You have been invited to participate in a change control process.
 We do need to confirm that a valid email was entered, so please click on the link below to return to the site and complete the confirmation process.</p>
 
-<p><%=edit_invitation_confirmation_url(@invite_user.email_invitation_token) %></p>
-<p><%=root_url(:subdomain => @invite_user.subdomain) + "/invitation_confirmations/" + @invite_user.email_invitation_token + "/edit" %></p>
+<p>www.<%=edit_invitation_confirmation_url(@invite_user.email_invitation_token) %></p>
+<p>www.<%=root_url(:subdomain => @invite_user.subdomain) + "/invitation_confirmations/" + @invite_user.email_invitation_token + "/edit" %></p>
 
 <p>Thank you,</p>
 <p>The Administrator</p>
