@@ -25,6 +25,16 @@ class InviteUsersController < ApplicationController
     end
   end
 
+  def destroy
+    @invite_user = current_resource
+    @invite_user.destroy
 
+    redirect_to new_invite_user_url
+
+  end
+
+  def current_resource
+    @current_resource ||= InviteUser.find(params[:id]) if params[:id]
+  end
 
 end

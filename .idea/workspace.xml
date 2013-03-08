@@ -4,20 +4,20 @@
     <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb" afterPath="$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/invitation_mailer/email_invitation_request.html.erb" afterPath="$PROJECT_DIR$/app/views/invitation_mailer/email_invitation_request.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/permission.rb" afterPath="$PROJECT_DIR$/app/models/permission.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/invite_users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/invite_users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RockCreek.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/session_store.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362598810648" ignored="false" />
     <file path="/sessions_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362592006595" ignored="false" />
-    <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362598045180" ignored="false" />
+    <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362714209651" ignored="false" />
     <file path="/signup_confirmations_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601306835" ignored="false" />
     <file path="/user.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362083112888" ignored="false" />
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
-    <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361896790562" ignored="false" />
+    <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362715000580" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628616049" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362629420563" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628590721" ignored="false" />
@@ -43,7 +43,7 @@
     <file path="/change_type.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362420191703" ignored="false" />
     <file path="/Gemfile" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362599035962" ignored="false" />
     <file path="/signup_mailer.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601836290" ignored="false" />
-    <file path="/email_confirmation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628560748" ignored="false" />
+    <file path="/email_confirmation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362714777646" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,55 +60,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="invite_users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/invite_users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="66" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup_confirmations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="98" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_group_assignment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user_group_assignment.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="64" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invitation_mailer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/mailers/invitation_mailer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="124" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="68" selection-start="345" selection-end="345" vertical-scroll-proportion="-6.3">
+            <state line="9" column="103" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,28 +78,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invite_users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/invite_users_controller.rb">
+      <file leaf-file-name="change_requests_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/change_requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="58" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
+            <state line="84" column="74" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="invitation_confirmations_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="invitation_confirmations_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/invitation_confirmations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="47" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+            <state line="30" column="44" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.6692913">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="permission.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="84" selection-start="221" selection-end="221" vertical-scroll-proportion="-4.9">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email_invitation_request.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/invitation_mailer/email_invitation_request.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="122" selection-start="261" selection-end="391" vertical-scroll-proportion="-3.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email_confirmation_request.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="60" selection-start="379" selection-end="379" vertical-scroll-proportion="-4.9">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/create.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="destroy.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/destroy.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permission.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/permission.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="66" selection-start="121" selection-end="121" vertical-scroll-proportion="0.12962963">
+            <state line="6" column="86" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/change_requests/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/show.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -189,9 +188,10 @@
         <option value="$PROJECT_DIR$/app/mailers/invitation_mailer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user_group_assignment.rb" />
+        <option value="$PROJECT_DIR$/app/models/permission.rb" />
         <option value="$PROJECT_DIR$/app/views/invitation_mailer/email_invitation_request.html.erb" />
         <option value="$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/permission.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/invite_users_controller.rb" />
       </list>
     </option>
   </component>
@@ -303,6 +303,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="signup_mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RockCreek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RockCreek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RockCreek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RockCreek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -735,12 +779,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.signup_confirmations_controller" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.sessions_controller" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Production: RockCreek" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Development: RockCreek" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: RockCreek" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: RockCreek" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.signup_confirmations_controller" />
+      <item index="5" class="java.lang.String" itemvalue="Ruby.sessions_controller" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -914,7 +958,11 @@
       <created>1362628633101</created>
       <updated>1362628633101</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Altered permissions so invitiees could reach the confirmation page.&#10;&#10;">
+      <created>1362629424084</created>
+      <updated>1362629424084</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -946,7 +994,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22678763" sideWeight="0.32681867" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2113127" sideWeight="0.75461453" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21291356" sideWeight="0.75461453" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24538545" sideWeight="0.72411954" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2145144" sideWeight="0.6004343" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39305103" sideWeight="0.27214515" order="9" side_tool="true" content_ui="tabs" />
@@ -999,7 +1047,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added www. to the mailer views for links.&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Altered permissions so invitiees could reach the confirmation page.&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1031,6 +1079,7 @@
     <MESSAGE value="Forgot to add stuff to GIT.&#10;" />
     <MESSAGE value="Fixing problems around invalid user_id in session.&#10;" />
     <MESSAGE value="Added www. to the mailer views for links.&#10;&#10;" />
+    <MESSAGE value="Altered permissions so invitiees could reach the confirmation page.&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1062,49 +1111,11 @@
           <line>2</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/invitation_confirmations_controller.rb</url>
-          <line>21</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="74" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/signups_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/invitation_confirmations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="393" selection-end="393" vertical-scroll-proportion="0.37378642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="124" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="98" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
@@ -1133,16 +1144,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="68" selection-start="345" selection-end="345" vertical-scroll-proportion="-6.3">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/create.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/destroy.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="84" selection-start="221" selection-end="221" vertical-scroll-proportion="-4.9">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invitation_mailer/email_invitation_request.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="523" selection-end="523" vertical-scroll-proportion="0.30582523">
+        <state line="5" column="122" selection-start="261" selection-end="391" vertical-scroll-proportion="-3.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="61" selection-start="325" selection-end="325" vertical-scroll-proportion="0.23482428">
+        <state line="7" column="60" selection-start="379" selection-end="379" vertical-scroll-proportion="-4.9">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.75">
           <folding />
         </state>
       </provider>
@@ -1154,30 +1200,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/change_requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="74" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/invite_users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/invitation_confirmations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="47" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="68" selection-start="345" selection-end="345" vertical-scroll-proportion="-6.3">
+        <state line="9" column="103" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/permission.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="66" selection-start="121" selection-end="121" vertical-scroll-proportion="0.12962963">
+        <state line="6" column="86" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/invitation_confirmations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="44" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.6692913">
           <folding />
         </state>
       </provider>
