@@ -38,3 +38,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'strong_parameters', github: 'rails/strong_parameters'
+
+gem 'spreedly-core-ruby'

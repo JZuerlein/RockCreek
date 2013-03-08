@@ -24,6 +24,7 @@ class ChangeRequestsController < ApplicationController
   # GET /change_requests/new.json
   def new
     @change_request = ChangeRequest.new
+    @change_request.status = Status.find_by_name("New").id
 
     respond_to do |format|
       format.html # edit.html.erb
