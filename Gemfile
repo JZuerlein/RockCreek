@@ -39,4 +39,4 @@ gem 'jquery-rails'
 
 gem 'strong_parameters', github: 'rails/strong_parameters'
 
-gem 'spreedly-core-ruby'
+gem 'stripe'
