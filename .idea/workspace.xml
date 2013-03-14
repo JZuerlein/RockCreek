@@ -15,7 +15,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362715000580" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363284907795" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363284993820" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628590721" ignored="false" />
@@ -43,7 +43,7 @@
     <file path="/signup_mailer.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601836290" ignored="false" />
     <file path="/email_confirmation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362714777646" ignored="false" />
     <file path="/spreedly.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362776899235" ignored="false" />
-    <file path="/stripe.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363284978401" ignored="false" />
+    <file path="/stripe.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363285133479" ignored="false" />
     <file path="/.gitignore" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362949940814" ignored="false" />
     <file path="/new.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363228523343" ignored="false" />
     <file path="/signup.js.coffee" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363229228001" ignored="false" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="stripe.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="86" selection-start="162" selection-end="162" vertical-scroll-proportion="0.17736487">
+            <state line="5" column="71" selection-start="167" selection-end="167" vertical-scroll-proportion="0.17736487">
               <folding />
             </state>
           </provider>
@@ -1007,7 +1007,11 @@
       <created>1363284914026</created>
       <updated>1363284914026</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Updated code for using config vars on Heroku">
+      <created>1363284991320</created>
+      <updated>1363284991320</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1247,7 +1251,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="86" selection-start="162" selection-end="162" vertical-scroll-proportion="0.17736487">
+        <state line="5" column="71" selection-start="167" selection-end="167" vertical-scroll-proportion="0.17736487">
           <folding />
         </state>
       </provider>

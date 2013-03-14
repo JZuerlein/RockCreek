@@ -1,5 +1,5 @@
 if Rails.env.to_s == "production"
-  Stripe.api_key = "foot"
+  Stripe.api_key = ENV['STRIPE_SECRET_KEY']
 else
   Stripe.api_key = "foot"
 end
