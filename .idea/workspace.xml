@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Jeff\RubymineProjects\RockCreek\config\initializers\stripe.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RockCreek.iws" />
@@ -15,7 +16,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362715000580" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363275266917" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363275848146" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628590721" ignored="false" />
@@ -82,19 +83,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stripe.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stripe.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="50" selection-start="145" selection-end="145" vertical-scroll-proportion="0.17736487">
+            <state line="5" column="50" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="41" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+            <state line="16" column="31" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5675676">
               <folding />
             </state>
           </provider>
@@ -161,7 +162,6 @@
         <option value="$PROJECT_DIR$/app/controllers/change_requests_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/spreedly.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb" />
         <option value="$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/signup_confirmation.js.coffee" />
@@ -169,6 +169,7 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/stripe.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -977,7 +978,11 @@
       <created>1363275272466</created>
       <updated>1363275272466</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Updated code for using config vars on Heroku">
+      <created>1363275855200</created>
+      <updated>1363275855200</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1208,16 +1213,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="41" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+        <state line="5" column="50" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="145" selection-end="145" vertical-scroll-proportion="0.17736487">
+        <state line="16" column="31" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5675676">
           <folding />
         </state>
       </provider>
