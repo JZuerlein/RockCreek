@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="DELETED" beforePath="C:\Users\Jeff\RubymineProjects\RockCreek\config\initializers\stripe.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RockCreek.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/session_store.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362598810648" ignored="false" />
     <file path="/sessions_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362592006595" ignored="false" />
-    <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362714209651" ignored="false" />
+    <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363275562525" ignored="false" />
     <file path="/signup_confirmations_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601306835" ignored="false" />
     <file path="/user.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362083112888" ignored="false" />
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362715000580" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363275044446" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363275266917" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628590721" ignored="false" />
@@ -43,7 +43,7 @@
     <file path="/signup_mailer.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362601836290" ignored="false" />
     <file path="/email_confirmation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362714777646" ignored="false" />
     <file path="/spreedly.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362776899235" ignored="false" />
-    <file path="/stripe.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362949553034" ignored="false" />
+    <file path="/stripe.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363275521590" ignored="false" />
     <file path="/.gitignore" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362949940814" ignored="false" />
     <file path="/new.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363228523343" ignored="false" />
     <file path="/signup.js.coffee" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363229228001" ignored="false" />
@@ -76,16 +76,25 @@
       <file leaf-file-name="signup.js.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="65" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+            <state line="12" column="73" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stripe.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stripe.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="53" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+            <state line="5" column="50" selection-start="145" selection-end="145" vertical-scroll-proportion="0.17736487">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="41" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,7 +103,7 @@
       <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="24" selection-start="599" selection-end="1217" vertical-scroll-proportion="0.0">
+            <state line="23" column="24" selection-start="599" selection-end="1217" vertical-scroll-proportion="-4.5">
               <folding />
             </state>
           </provider>
@@ -103,16 +112,16 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/signups/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="82" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-17.1">
+            <state line="47" column="82" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-12.9">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="17" selection-start="816" selection-end="816" vertical-scroll-proportion="0.7386935">
+            <state line="10" column="85" selection-start="434" selection-end="434" vertical-scroll-proportion="-6.3">
               <folding />
             </state>
           </provider>
@@ -156,10 +165,10 @@
         <option value="$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb" />
         <option value="$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/signup_confirmation.js.coffee" />
-        <option value="$PROJECT_DIR$/config/initializers/stripe.rb" />
         <option value="$PROJECT_DIR$/app/views/signups/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/initializers/stripe.rb" />
       </list>
     </option>
   </component>
@@ -964,7 +973,11 @@
       <created>1363275048475</created>
       <updated>1363275048475</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Updated code for using config vars on Heroku">
+      <created>1363275272466</created>
+      <updated>1363275272466</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -996,12 +1009,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22678763" sideWeight="0.32681867" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22198506" sideWeight="0.709012" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29098806" sideWeight="0.72411954" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22198506" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29098806" sideWeight="0.72411954" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2145144" sideWeight="0.6004343" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39305103" sideWeight="0.27214515" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32464713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1105,15 +1118,10 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="82" />
+      <option name="time" value="84" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/invite_users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="103" selection-start="246" selection-end="246" vertical-scroll-proportion="0.46210268" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="54" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" />
@@ -1165,13 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="599" selection-end="1217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="71" selection-start="302" selection-end="302" vertical-scroll-proportion="0.28093645">
@@ -1179,30 +1180,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="65" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+        <state line="10" column="85" selection-start="434" selection-end="434" vertical-scroll-proportion="-6.3">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/signups/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="82" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-17.1">
+        <state line="47" column="82" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-12.9">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="24" selection-start="599" selection-end="1217" vertical-scroll-proportion="-4.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="73" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="41" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="53" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="17" selection-start="816" selection-end="816" vertical-scroll-proportion="0.7386935">
+        <state line="5" column="50" selection-start="145" selection-end="145" vertical-scroll-proportion="0.17736487">
           <folding />
         </state>
       </provider>
