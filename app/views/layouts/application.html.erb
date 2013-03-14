@@ -21,8 +21,6 @@
             <%= link_to "Sign up", signup_path %> or
             <%= link_to "Log in", login_path %>
         <% end %>
-
-        <%= link_to Rails.env.to_s, logout_path %>
       </div>
       <div id="commands">
             <% if allow? "invite_users", "new" %>
