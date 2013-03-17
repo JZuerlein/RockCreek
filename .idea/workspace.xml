@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Jeff\RubymineProjects\RockCreek\config\initializers\stripe.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/signups/new.html.erb" afterPath="$PROJECT_DIR$/app/views/signups/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RockCreek.iws" />
@@ -15,7 +15,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362715000580" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363284993820" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363285142267" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1361294000129" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362452960762" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628590721" ignored="false" />
@@ -45,8 +45,8 @@
     <file path="/spreedly.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362776899235" ignored="false" />
     <file path="/stripe.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363285133479" ignored="false" />
     <file path="/.gitignore" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362949940814" ignored="false" />
-    <file path="/new.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363228523343" ignored="false" />
-    <file path="/signup.js.coffee" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363229228001" ignored="false" />
+    <file path="/new.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363490266880" ignored="false" />
+    <file path="/signup.js.coffee" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363403847217" ignored="false" />
     <file path="/signup_confirmation.js.coffee" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1363057479716" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,16 +76,16 @@
       <file leaf-file-name="signup.js.coffee" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="73" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+            <state line="16" column="87" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stripe.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stripe.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="71" selection-start="167" selection-end="167" vertical-scroll-proportion="0.17736487">
+            <state line="5" column="71" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/signups/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="82" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-12.9">
+            <state line="48" column="94" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.5017794">
               <folding />
             </state>
           </provider>
@@ -164,11 +164,11 @@
         <option value="$PROJECT_DIR$/app/views/signup_mailer/email_confirmation_request.html.erb" />
         <option value="$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/signup_confirmation.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/signups/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/initializers/stripe.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee" />
+        <option value="$PROJECT_DIR$/app/views/signups/new.html.erb" />
       </list>
     </option>
   </component>
@@ -1011,7 +1011,11 @@
       <created>1363284991320</created>
       <updated>1363284991320</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Updated code for using config vars on Heroku">
+      <created>1363285154036</created>
+      <updated>1363285154036</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1221,23 +1225,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/signups/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="82" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-12.9">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/signup_confirmations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="24" selection-start="599" selection-end="1217" vertical-scroll-proportion="-4.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="73" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1251,7 +1241,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="71" selection-start="167" selection-end="167" vertical-scroll-proportion="0.17736487">
+        <state line="5" column="71" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="87" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/signups/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="94" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.5017794">
           <folding />
         </state>
       </provider>
