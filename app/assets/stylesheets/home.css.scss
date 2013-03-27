@@ -1,3 +1,32 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#home {
+.plan {
+  width: 150px;
+  text-align: center;
+  .name {
+    color:  #FFF;
+    background:  #386FB2;
+  }
+  .signup {
+    margin: 20px;
+    a {
+      font-size: 13px;
+      padding: 5px 10px 6px 10px;
+      font-weight: bold;
+      border: 1px solid #2A7531;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      color: #FFF;
+      background: #328039;
+      background: -webkit-gradient(linear, left top, left bottom, from(#56D854), to(#328039));
+      background: -moz-linear-gradient(top,  #56D854,  #328039);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#56D854', endColorstr='#328039');
+      text-decoration: none;
+      text-shadow: 0 -1px 0 #036;
+    }
+  }
+}
+}
