@@ -3,22 +3,22 @@
 <head>
   <title>RockCreek</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "https://js.stripe.com/v1/", "application" %>
+<%= javascript_include_tag "https://js.stripe.com/v1/", "application" %>
   <%= csrf_meta_tags %>
   <% if Rails.env.to_s == "production" %>
       <%= tag :meta, :name => "stripe-key", :content => ENV['STRIPE_PUBLIC_KEY'] %>
   <% else %>
-      <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
+      <%= javascript_tag "Stripe.publishableKey = '#{STRIPE_PUBLIC_KEY}';" %>
+      <!-- <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %> -->
   <% end %>
 </head>
-<body class="<%= params[:controller] %>">
+<body>
     <div id="container">
       <div id="user_nav">
         <% if current_user %>
             Logged in as <%= current_user.email %>
             <%= link_to "Log out", logout_path %>
         <% else %>
-            <%= link_to "Sign up", signup_path %> or
             <%= link_to "Log in", login_path %>
         <% end %>
       </div>

@@ -1,0 +1,20 @@
+<div id="plans">
+<h1>Welcome</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<% @plans.each do |plan| %>
+    <div class="plan">
+      <div class="name">
+        <%= plan.name %>
+      </div>
+      <div class="price">
+        <%= number_to_currency plan.price, :precision => 0 %>
+      </div>
+      <div class="per_month">per month</div>
+      <div class="for_users"><%= plan.num_users %> users</div>
+      <div class="signup">
+        <%=  link_to "Signup", new_signup_path(:plan_id => plan.id) %>
+      </div>
+    </div>
+<% end %>
+</div>

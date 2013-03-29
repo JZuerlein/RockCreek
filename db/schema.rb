@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130304180244) do
+ActiveRecord::Schema.define(:version => 20130329155254) do
 
   create_table "change_requests", :force => true do |t|
     t.integer  "requester_id"
@@ -57,6 +57,14 @@ ActiveRecord::Schema.define(:version => 20130304180244) do
 
   add_index "invite_users", ["tenant_id"], :name => "index_invite_users_on_tenant_id"
 
+  create_table "plans", :force => true do |t|
+    t.string   "name"
+    t.decimal  "price"
+    t.integer  "num_users"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "request_responses", :force => true do |t|
     t.string   "response"
     t.datetime "created_at",        :null => false
@@ -77,14 +85,12 @@ ActiveRecord::Schema.define(:version => 20130304180244) do
     t.string   "company"
     t.string   "password_digest"
     t.string   "site_address"
-    t.string   "credit_card"
-    t.integer  "expires_on_month"
-    t.integer  "expires_on_year"
-    t.integer  "billing_zip"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
     t.string   "email_confirmation_token"
     t.datetime "email_confirmation_sent_at"
+    t.integer  "last_four_digits"
+    t.integer  "stripe_id"
   end
 
   create_table "statuses", :force => true do |t|

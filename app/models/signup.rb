@@ -1,6 +1,6 @@
 class Signup < ActiveRecord::Base
-  attr_accessible :billing_zip, :company, :credit_card, :email, :expires_on_month, :expires_on_year, :first_name, :last_name, :password, :password_confirmation, :site_address
-  attr_accessor :password, :password_confirmation
+  attr_accessible :company, :email, :first_name, :last_name, :password, :password_confirmation, :site_address, :stripe_token, :last_four_digits
+  attr_accessor :password, :password_confirmation, :stripe_token
   validates_presence_of :password, :on => :create
 
   def send_confirmation_request

@@ -26,3 +26,7 @@ ChangeType.create!(name: "Software Install")
 ChangeType.create!(name: "Software Migration")
 ChangeType.create!(name: "Software Uninstall")
 ChangeType.create!(name: "Software Upgrade")
+
+Plan.create!(name: "Small", price:50.00, num_users: 10)
+Plan.create!(name: "Medium", price:100.00, num_users: 25)
+Plan.create!(name: "Large", price:500.00, num_users: 150)

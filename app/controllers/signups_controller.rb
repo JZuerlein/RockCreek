@@ -17,8 +17,16 @@ class SignupsController < ApplicationController
     else
         render "new"
     end
+  rescue Stripe::CardError => e
+    @signup.errors.add :base, e.message
+    @signup.stripe_token = nil
+    render :action => :new
 
-
+  rescue Stripe::StripeError => e
+    logger.error e.message
+    @signup.errors.add :base, "There was a problem with your credit card."
+    @sipnup.stripe_token = nil
+    render :action => :new
   end
 
   def edit
@@ -29,10 +37,8 @@ class SignupsController < ApplicationController
   def update
     @signup = Signup.find_by_email_confirmation_token!(params[:id])
 
-
     # set the confirmed field on the user record.
     @user = User.find_by_email!(@signup.email)
-
 
     if @user.update_attributes(:tenant_id => @tenant.id, :confirmed => TRUE)
       redirect_to root_url, :notice => "Confirmation successful!"
