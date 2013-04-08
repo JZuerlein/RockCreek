@@ -1,19 +1,88 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#pitch {
+  background: #373833;
+  border:  1px solid #373833;
+  margin: 0px;
+  color: #FFF;
+  padding: 0px;
+  h1 {
+    color: #FFF;
+    font-size: 2.5em;
+    line-height: 1.2;
+  }
+
+  #pitch_content {
+    width: 600px;
+    margin: 10px;
+  }
+}
+
+#secure {
+  background: #126287;
+  clear: both;
+  color: #FFF;
+  padding: 5px;
+  padding-left: 10px;
+}
+
 #plans {
+  padding-top: 10px;
+  padding-bottom: 10px;
 
 .plan {
-  width: 150px;
+  float: left;
+  height: 300px;
+  width: 250px;
   text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #333333;
   .name {
-    color:  #FFF;
-    background:  #386FB2;
+    color:  #333333;
+    font-size:  300%;
+    padding: .5em;
+    font-weight: bold;
+  }
+  .price {
+    font-size: 1.5em;
+    margin:  0px;
+    h2 {
+      font-size: 1em;
+      color: #333333;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin: 0px 5px 0px 5px;
+    }
+    h3 {
+      font-size: .8em;
+      color: #126287;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin: 0px 5px 0px 5px;
+      border-bottom: 1px dotted #333333;
+    }
+  }
+  .for_users {
+    color:  #333333;
+    padding:  5px;
+    font-size: 1em;
+    color: #333333;
+    margin: 0px 5px 0px 5px;
+    strong {
+      color: #811F14
+    }
+    .dotted_line {
+      border-bottom: 1px dotted #333333;
+    }
   }
   .signup {
     margin: 20px;
     a {
-      font-size: 13px;
+      font-size: 15px;
       padding: 5px 10px 6px 10px;
       font-weight: bold;
       border: 1px solid #2A7531;
@@ -21,12 +90,12 @@
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       color: #FFF;
-      background: #328039;
+      background: #72BF4F;
       background: -webkit-gradient(linear, left top, left bottom, from(#56D854), to(#328039));
       background: -moz-linear-gradient(top,  #56D854,  #328039);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#56D854', endColorstr='#328039');
       text-decoration: none;
-      text-shadow: 0 -1px 0 #036;
+
     }
   }
 }

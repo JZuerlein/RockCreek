@@ -23,6 +23,7 @@ RockCreek::Application.routes.draw do
   resources :invite_users
   resources :invitation_confirmations
   resources :request_response
+  resources :admin
 
 
 

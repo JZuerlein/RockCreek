@@ -11,7 +11,7 @@ $(function() {
 
     $("form:has(#credit-card)").submit(function() {
         var form = this;
-        //$("#new_signup").attr("disabled", true);
+        $("#register_button").attr("disabled", true);
         $("#credit-card input, #credit-card select").attr("name", "");
         $("#credit-card-errors").hide();
 
@@ -36,7 +36,7 @@ $(function() {
             } else {
                 $("#stripe-error-message").text(response.error.message);
                 $("#credit-card-errors").show();
-                $("#new_signup").attr("disabled", false);
+                $("#register_button").attr("disabled", false);
             }
         });
 

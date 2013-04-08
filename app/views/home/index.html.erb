@@ -1,20 +1,30 @@
-<div id="plans">
-<h1>Welcome</h1>
+<div id="pitch">
+  <div id="pitch_content">
+    <h1>A better way to manage your change control process.</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+<div id="plans">
 <% @plans.each do |plan| %>
     <div class="plan">
       <div class="name">
         <%= plan.name %>
       </div>
       <div class="price">
-        <%= number_to_currency plan.price, :precision => 0 %>
+        <h2><%= number_to_currency plan.price, :precision => 0 %> / month</h2>
+        <h3>THIS ISN'T REAL</h3>
       </div>
-      <div class="per_month">per month</div>
-      <div class="for_users"><%= plan.num_users %> users</div>
+      <div class="for_users">
+        <h2>Up to <strong><%= plan.num_users %></strong> users</h2>
+        <h2><strong>Lots</strong> of storage</h2>
+        <h2><strong>Limited</strong> functionality</h2>
+        <div id="dotted_line"></div>
+      </div>
       <div class="signup">
-        <%=  link_to "Signup", new_signup_path(:plan_id => plan.id) %>
+        <%=  link_to "Choose Plan", new_signup_path(:plan_id => plan.id) %>
       </div>
     </div>
 <% end %>
 </div>
+<div id="secure"><h2>Everything in your MyChangeControl account is safe, secure, and password-protected.</h2></div>

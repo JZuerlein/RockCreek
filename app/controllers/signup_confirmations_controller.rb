@@ -13,8 +13,25 @@ class SignupConfirmationsController < ApplicationController
   def update
     @signup = Signup.find_by_email_confirmation_token!(params[:id])
 
+    customer = Stripe::Customer.create(
+        :card => @signup.stripe_token,
+        :plan => @signup.plan_id,
+        :email =>@signup.email
+    )
+
+    #customer = Stripe::Customer.create(
+    #    :card => @signup.stripe_token,
+    #    :description => @signup.email
+    #)
+
+    #Stripe::Charge.create(
+    #    :amount => @signup.plan.price.to_int * 100,
+    #    :currency => "usd",
+    #    :customer => customer.id
+    #)
+
     # create the tenant record
-    @tenant = Tenant.new(:name => @signup.company, :subdomain => @signup.site_address)
+    @tenant = Tenant.new(:name => @signup.company, :subdomain => @signup.site_address, :stripe_customer_id => customer.id)
     @tenant.save
 
     # set the confirmed field on the user record.

@@ -1,6 +1,13 @@
 class SignupsController < ApplicationController
   def new
     @signup = Signup.new
+    @signup.plan = Plan.find(params[:plan_id])
+
+    @eventlog = Eventlog.new
+    @eventlog.ip =  request.remote_ip
+    @eventlog.action = "Visited Signup Page"
+    @eventlog.controller = SignupsController.to_s
+    @eventlog.save
   end
 
   def create
@@ -10,6 +17,13 @@ class SignupsController < ApplicationController
     if @user.save
       if @signup.save
         @signup.send_confirmation_request
+
+        @eventlog = Eventlog.new
+        @eventlog.ip =  request.remote_ip
+        @eventlog.action = "Submitted Signup Form"
+        @eventlog.controller = SignupsController.to_s
+        @eventlog.save
+
         redirect_to root_url, :notice => "Please check you email for a confirmation request, and click on the link enclosed."
       else
         render "new"

@@ -1,6 +1,8 @@
 class Signup < ActiveRecord::Base
-  attr_accessible :company, :email, :first_name, :last_name, :password, :password_confirmation, :site_address, :stripe_token, :last_four_digits
-  attr_accessor :password, :password_confirmation, :stripe_token
+  belongs_to :plan
+
+  attr_accessible :company, :email, :first_name, :last_name, :password, :password_confirmation, :site_address, :stripe_token, :last_four_digits, :plan_id
+  attr_accessor :password, :password_confirmation
   validates_presence_of :password, :on => :create
 
   def send_confirmation_request

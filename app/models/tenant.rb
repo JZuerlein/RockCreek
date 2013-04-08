@@ -1,5 +1,5 @@
 class Tenant < ActiveRecord::Base
-  attr_accessible :name, :subdomain, :case_sensitive => false
+  attr_accessible :name, :subdomain, :stripe_customer_id, :case_sensitive => false
   cattr_accessor :current_id
 
   def self.current_id=(id)

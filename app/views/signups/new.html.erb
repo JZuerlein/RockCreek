@@ -42,6 +42,7 @@
 
     <%=  f.hidden_field :stripe_token %>
     <%=  f.hidden_field :last_four_digits %>
+    <%=  f.hidden_field :plan_id %>
 
     <div id="credit-card">
 
@@ -68,6 +69,8 @@
         </div>
     </div>
 
-    <p class="button"><%= f.submit %></p>
+    <div class="actions">
+      <%=  f.submit("Register", :id => "register_button") %>
+    </div>
 
 <% end %>

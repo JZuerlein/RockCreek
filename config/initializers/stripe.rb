@@ -3,4 +3,4 @@ if Rails.env.to_s == "production"
 else
   Stripe.api_key = "foot"
 end
-STRIPE_PUBLIC_KEY = "pk_B1SaM15nXXruDU3g2D6uns2kJeu9m"
+STRIPE_PUBLIC_KEY = "pk_test_cZ8D0YdtAYofPno7oQ0iDWhu"
