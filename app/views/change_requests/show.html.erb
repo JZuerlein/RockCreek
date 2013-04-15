@@ -59,10 +59,17 @@
       </ul>
     </div>
 
-    <div class="field">
-
+    <div class="actions">
+      Actions:
+      <ul>
+        <% if @change_request.can_edit(@current_user) %>
+            <li><%= link_to content_tag(:span, 'Edit'), edit_change_request_path(@change_request), :class => "button" %></li>
+        <% end %>
+        <% @change_request.available_commands(@current_user).each do |command| %>
+            <li>
+              <%=  link_to content_tag(:span, command.to_s), edit_change_request_path(:command => command.to_s), :class => "button" %>
+            </li>
+        <% end %>
+      </ul>
     </div>
 <% end %>
-
-<%= link_to 'Edit', edit_change_request_path(@change_request) %> |
-<%= link_to 'Back', change_requests_path %>

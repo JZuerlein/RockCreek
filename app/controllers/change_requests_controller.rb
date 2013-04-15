@@ -24,10 +24,11 @@ class ChangeRequestsController < ApplicationController
   # GET /change_requests/new.json
   def new
     @change_request = ChangeRequest.new
-    @change_request.status = Status.find_by_name("New").id
+    @change_request.status = "New"
+    @change_request.requester_id = @current_user.id
 
     respond_to do |format|
-      format.html # edit.html.erb
+      format.html #edit.html.erb
       format.json { render json: @change_request }
     end
   end
@@ -35,12 +36,50 @@ class ChangeRequestsController < ApplicationController
   # GET /change_requests/1/edit
   def edit
     @change_request = current_resource
+
+    if params[:command] == "Approve"
+      @change_request.approve(@current_user)
+      redirect_to @change_request
+    end
+
+    if params[:command] == "Submit"
+      @change_request.submit(@current_user)
+      redirect_to @change_request
+    end
+
+    if params[:command] == "Deny"
+      @change_request.deny(@current_user)
+      redirect_to @change_request
+    end
+
+    if params[:command] == "Modify"
+      @change_request.modify(@current_user)
+    end
+
+    if params[:command] == "Complete"
+      @change_request.complete(@current_user)
+      redirect_to @change_request
+    end
+  end
+
+  def approve
+    @change_request = current_resource
+    @change_request.approve(@current_user)
+    @change_request.save
   end
 
   # POST /change_requests
   # POST /change_requests.json
   def create
     @change_request = ChangeRequest.new(params[:change_request])
+
+    @eventlog = Eventlog.new
+    @eventlog.when = Date.today
+    @eventlog.ip =  request.remote_ip
+    @eventlog.action = "Created Change Request"
+    @eventlog.controller = ChangeRequestsController.to_s
+    @eventlog.user = @current_user.id
+    @eventlog.save
 
     respond_to do |format|
       if @change_request.save

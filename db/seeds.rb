@@ -14,6 +14,8 @@
 #Status.create!(name: "Approved")
 #Status.create!(name: "Denied")
 #Status.create!(name: "Completed")
+Status.create!(name: "Submitted")
+Status.create!(name: "Modified")
 
 #ChangeType.create!(name: "Facilities")
 #ChangeType.create!(name: "Hardware Install")
@@ -27,6 +29,6 @@
 #ChangeType.create!(name: "Software Uninstall")
 #ChangeType.create!(name: "Software Upgrade")
 
-Plan.create!(name: "Small", price:50.00, num_users: 10)
-Plan.create!(name: "Medium", price:100.00, num_users: 25)
-Plan.create!(name: "Large", price:500.00, num_users: 150)
+#Plan.create!(name: "Small", price:50.00, num_users: 10)
+#Plan.create!(name: "Medium", price:100.00, num_users: 25)
+#Plan.create!(name: "Large", price:500.00, num_users: 150)

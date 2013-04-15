@@ -5,6 +5,15 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
+
+      @eventlog = Eventlog.new
+      @eventlog.when = Date.today
+      @eventlog.ip =  request.remote_ip
+      @eventlog.action = "User Logged In"
+      @eventlog.controller = SessionsController.to_s
+      @eventlog.user = user.id
+      @eventlog.save
+
       session[:user_id] = user.id
       #if (session[:user_id] != nil)
       #  puts "SESSIONSCONTROLLER-CREATE session[:user_id] = " + session[:user_id].to_s

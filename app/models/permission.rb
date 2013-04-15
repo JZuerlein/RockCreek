@@ -12,8 +12,9 @@ class Permission
       #allow :users, [:edit, :update]           Only ADMINs should be able to edit.
       allow :change_requests, [:index, :show, :new, :create]
       allow :change_requests, [:edit, :update] do |change_request|
-        change_request.requester_id == user.id
+        ((change_request.requester_id == user.id) || user.is_member_of_change_control || (change_request.assigned_to == user.id)) && (change_request.status != "Completed")
       end
+      #allow_param :change_request, [:status] #if user.is_member_of_change_control
       allow :request_response, [:edit, :show, :new, :create, :update, :index] if user.is_member_of_change_control
 
       allow :dashboard, [:show]

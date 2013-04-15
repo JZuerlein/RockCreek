@@ -76,12 +76,21 @@ SELECT 'December' AS MONTH,
 
     @conversions = ActiveRecord::Base.connection.execute(conversion_query)
 
-    total = 0
-    @conversions.each do |row|
-      row.each do |column|
-        total = total + 1
-      end
-    end
+    usage_query = "SELECT tenant_id, COUNT(*) AS LoggedIn, (SELECT COUNT(*) FROM users WHERE tenant_id = List.tenant_id) AS NumUsers FROM (SELECT DISTINCT eventlogs.user, tenant_id FROM eventlogs
+INNER JOIN users ON users.id = eventlogs.user::integer
+WHERE action = 'User Logged In' AND eventlogs.created_at > current_date - 30) AS List GROUP BY tenant_id
+
+UNION
+
+SELECT id AS tenant_id, 0 AS LoggedIn, (SELECT COUNT(*) FROM users WHERE tenant_id = tenants.id) AS NumUsers FROM tenants
+			   WHERE id NOT IN (SELECT DISTINCT tenant_id FROM eventlogs
+			   INNER JOIN users ON users.id = eventlogs.user::integer
+			   WHERE action = 'User Logged In' AND eventlogs.created_at > current_date - 30)
+			   ORDER BY loggedin, numusers"
+
+    @usage = ActiveRecord::Base.connection.execute(usage_query)
+
+
 
   end
 end
