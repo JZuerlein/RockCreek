@@ -24,7 +24,9 @@
             <td><%= link_to 'Show', change_request %></td>
         <% end %>
         <% if allow? "change_requests", "edit", change_request%>
-            <td><%= link_to 'Edit', edit_change_request_path(change_request) %></td>
+            <% if change_request.can_edit(@current_user) %>
+                <td><%= link_to 'Edit', edit_change_request_path(change_request) %></td>
+            <% end %>
         <% end %>
         <% if allow? "change_requests", "destroy" %>
             <td><%= link_to 'Destroy', change_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>

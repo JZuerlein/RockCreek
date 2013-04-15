@@ -13,7 +13,7 @@ class ChangeRequest < ActiveRecord::Base
   end
 
   def can_edit(user)
-    return ((requester_id == user.id) || user.is_member_of_change_control || (assigned_to == user.id)) && (status != "Completed")
+    return ((requester_id == user.id) || user.is_member_of_change_control || (assigned_to == user.id)) && (status == "New" || status == "Modified")
   end
 
   def available_commands(user)
