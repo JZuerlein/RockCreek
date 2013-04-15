@@ -32,17 +32,10 @@
       <%= f.text_field :summary %>
     </div>
 
-    <% if @change_request.status == ("New" || "Modified") %>
-        <div class="field">
-          <%= f.label :description %><br />
-          <%= f.text_area :description, :size => "50x10" %>
-        </div>
-    <% else %>
-        <div class="field">
-          <%= f.label :description %><br />
-          <%= f.text_area :description, :size => "50x10", :disabled => true %>
-        </div>
-    <% end %>
+    <div class="field">
+      <%= f.label :description %><br />
+      <%= f.text_area :description, :size => "50x10" %>
+    </div>
 
     <div class="field">
       <%= f.label :change_type %><br />
