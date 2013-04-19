@@ -1,30 +1,29 @@
-<div id="pitch">
-  <div id="pitch_content">
-    <h1>A better way to manage your change control process.</h1>
+<div class="hero-unit">
+    <h1 style="color: #ffffff">A better way to manage your change control process.</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
+    <p style="color: #ffffff">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p><a href="#" class="btn btn-primary btn-large">Learn nothing more &raquo;</a></p>
 </div>
-<div id="plans">
+
+<div class="row">
 <% @plans.each do |plan| %>
-    <div class="plan">
-      <div class="name">
-        <%= plan.name %>
+    <div id="plan" class="span4 text-center" style="background-color: #eeeeee; padding-bottom: 10px;">
+      <div>
+        <h1 style="line-height: 1em"><%= plan.name %></h1>
       </div>
-      <div class="price">
-        <h2><%= number_to_currency plan.price, :precision => 0 %> / month</h2>
-        <h3>THIS ISN'T REAL</h3>
+      <div class="price" style="border-bottom: 1px dotted #333333; margin-left: 3em; margin-right: 3em;">
+        <h3 style="line-height: 1em"><%= number_to_currency plan.price, :precision => 0 %> / month</h3>
+        <h3 class="text-info" style="line-height: 1em">THIS ISN'T REAL</h3>
       </div>
       <div class="for_users">
-        <h2>Up to <strong><%= plan.num_users %></strong> users</h2>
-        <h2><strong>Lots</strong> of storage</h2>
-        <h2><strong>Limited</strong> functionality</h2>
-        <div id="dotted_line"></div>
+        <h3 style="line-height: 1em">Up to <strong class="text-error"><%= plan.num_users %></strong> users</h3>
+        <h3 style="line-height: 1em"><strong class="text-error">Lots</strong> of storage</h3>
+        <h3 style="line-height: 1em "><strong class="text-error">Limited</strong> functionality</h3>
       </div>
       <div class="signup">
-        <%=  link_to "Choose Plan", new_signup_path(:plan_id => plan.id) %>
+        <%=  link_to "Choose Plan", new_signup_path(:plan_id => plan.id), :class => 'btn btn-success btn-large' %>
       </div>
     </div>
 <% end %>
 </div>
-<div id="secure"><h2>Everything in your MyChangeControl account is safe, secure, and password-protected.</h2></div>
+<div class="text-center" style="padding-top: 20px;"><h3 style="background-color: #126287; color: white;">Everything in your MyChangeControl account is safe, secure, and password-protected.</h3></div>

@@ -4,15 +4,23 @@
 <%= render 'form' %>
 
 <h2>Outstanding Invitations</h2>
-<table>
-  <tr><td>Email Address</td><td>Date Sent</td></tr>
-  <% @outstanding_invitations.each do |invite_user| %>
-      <tr>
-        <td><%= invite_user.email %></td>
-        <td><%= invite_user.email_invitation_sent_at %></td>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Email Address</th>
+    <th>Date Sent</th>
+  </tr>
+  </thead>
 
-        <td><%= link_to 'Destroy', invite_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-  <% end %>
+  <tbody>
+      <% @outstanding_invitations.each do |invite_user| %>
+          <tr>
+            <td><%= invite_user.email %></td>
+            <td><%= invite_user.email_invitation_sent_at %></td>
+
+            <td><%= link_to 'Destroy', invite_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+  </tbody>
 </table>
 

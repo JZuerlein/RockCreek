@@ -1,5 +1,5 @@
 <h1>Sign Up</h1>
-<%= form_for @signup do |f| %>
+<%= form_for(@signup, :html => {:class => 'form-horizontal' }) do |f| %>
     <%if @signup.errors.any? %>
         <div class="error_messages">
           <h2>Form is invalid</h2>
@@ -11,34 +11,54 @@
         </div>
 <% end%>
 
-    <p>
-      <%= f.label :first_name %><br/>
-      <%= f.text_field :first_name %>
-    </p>
-    <p>
-      <%= f.label :last_name %><br/>
-      <%= f.text_field :last_name %>
-    </p>
-    <p>
-      <%= f.label :email %><br/>
-      <%= f.text_field :email %>
-    </p>
-    <p>
-      <%= f.label :company %><br/>
-      <%= f.text_field :company %>
-    </p>
-    <p>
-      <%= f.label :password %><br/>
-      <%= f.password_field :password %>
-    </p>
-    <p>
-      <%= f.label :password_confirmation %><br/>
-      <%= f.password_field :password_confirmation %>
-    </p>
-    <p>
-      <%= f.label :site_address %><br/>
-      <%= f.text_field :site_address %>
-    </p>
+    <div class="control-group">
+      <%= f.label :first_name, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :first_name %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :last_name, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :last_name %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :email, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :email %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :company, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :company %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :password, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.password_field :password %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :password_confirmation, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.password_field :password_confirmation %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :site_address, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :site_address %>
+      </div>
+    </div>
 
     <%=  f.hidden_field :stripe_token %>
     <%=  f.hidden_field :last_four_digits %>
@@ -52,25 +72,36 @@
         </div>
       </div>
 
-        <div class="field">
-          <%=  label_tag :credit_card, "Credit Card Number " %>
-          <%=  text_field_tag :credit_card, nil , name: nil %>
+        <div class="control-group">
+          <%=  label_tag :credit_card, 'Credit Card Number', :class => 'control-label' %>
+          <div class="controls">
+            <%=  text_field_tag :credit_card, nil , name: nil %>
+          </div>
         </div>
 
-        <div class="field">
-          <%= label_tag :cvc_code, "Security Code on Card (CVC)" %>
-          <%= text_field_tag :cvc_code, nil, name: nil %>
+        <div class="control-group">
+          <%= label_tag :cvc_code, 'Security Code on Card (CVC)', :class => 'control-label' %>
+          <div class="controls">
+            <%= text_field_tag :cvc_code, nil, name: nil %>
+          </div>
         </div>
 
-        <div class="field">
-          <%=  label_tag :expires_month, "Expiration Date" %>
-          <%=  select_month nil, {add_month_numbers_true: true}, {name: nil, id: "expires_month"} %>
-          <%=  select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "expires_year"} %>
+        <div class="control-group">
+          <%=  label_tag :expires_month, 'Expiration Date', :class => 'control-label' %>
+          <div class="controls">
+            <%=  select_month nil, {add_month_numbers_true: true}, {name: nil, id: 'expires_month'} %>
+            <%=  select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: 'expires_year'} %>
+          </div>
         </div>
     </div>
 
-    <div class="actions">
-      <%=  f.submit("Register", :id => "register_button") %>
+    <div class="control-group">
+      <label class="control-label"></label>
+      <div class="controls">
+        <div class="btn-toolbar">
+          <%=  f.submit("Register", :id => "register_button", :class => 'btn btn-primary') %>
+        </div>
+      </div>
     </div>
 
 <% end %>

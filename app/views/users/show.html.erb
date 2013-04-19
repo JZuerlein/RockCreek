@@ -12,10 +12,18 @@
 
 <b>Group Memberships:</b>
 <ul>
+  <% if @user.groups.count == 0 %><li>None</li><% end %>
   <% @user.groups.each do |group| %>
   <li><%= group.name %></li>
   <% end %>
 </ul>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', user_path %>
+<div class="control-group">
+  <label class="control-label"></label>
+  <div class="controls">
+    <div class="btn-toolbar">
+        <%= link_to 'Edit', edit_user_path(@user), :class => 'btn btn-primary' %>
+        <%= link_to 'Back', users_path, :class => 'btn btn-primary' %>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-<%= form_for(@change_request) do |f| %>
+<%= form_for(@change_request, :html => {:class =>'form-horizontal'}) do |f| %>
     <% if @change_request.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@change_request.errors.count, "error") %> prohibited this change_request from being saved:</h2>
@@ -11,65 +11,90 @@
         </div>
     <% end %>
 
-    </p>
-    <div class="field">
-      <%= f.label :requester_name %><br />
-      <%= f.text_field :requester_name, :disabled => true%>
-    </div>
-    <div class="field">
-      <%= f.label :request_date %><br />
-      <%= f.date_select :request_date, :disabled => true%>
-    </div>
-    <div class="field">
-      <%= f.label :status %><br />
-      <%= f.text_field :status, :disabled => true %>
-    </div>
-    <div class="field">
-      <%= f.label :summary %><br />
-      <%= f.text_field :summary, :disabled => true%>
-    </div>
-    <div class="field">
-      <%= f.label :description %><br />
-      <%= f.text_area :description, :size => "50x10", :disabled => true %>
-    </div>
-    <div class="field">
-      <%= f.label :change_type %><br />
-      <%= f.text_field :change_type, :disabled => true %>
-    </div>
-    <div class="field">
-      <%= f.label :assigned_to %><br />
-      <%= f.text_field :assigned_to_name, :disabled => true%>
-    </div>
-    <div class="field">
-      <%= f.label :due_date %><br />
-      <%= f.date_select :due_date, :disabled => true %>
-    </div>
-    <div class="field">
-      Responses:
-      <ul>
-        <% @change_request.request_responses.each do |request_response| %>
-            <li>
-              <% if request_response.response != nil %>
-                  <%= User.find_by_id(request_response.user_id).full_name + "'s response was " + request_response.response + "."  %>
-              <% else %>
-                  <%= User.find_by_id(request_response.user_id).full_name + " has not responded yet." %>
-              <% end %>
-            </li>
-        <% end %>
-      </ul>
+    <div class="control-group">
+      <%= f.label :requester_name, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :requester_name, :disabled => true%>
+      </div>
     </div>
 
-    <div class="actions">
-      Actions:
-      <ul>
-        <% if @change_request.can_edit(@current_user) %>
-            <li><%= link_to content_tag(:span, 'Edit'), edit_change_request_path(@change_request), :class => "button" %></li>
-        <% end %>
-        <% @change_request.available_commands(@current_user).each do |command| %>
-            <li>
-              <%=  link_to content_tag(:span, command.to_s), edit_change_request_path(:command => command.to_s), :class => "button" %>
-            </li>
-        <% end %>
-      </ul>
+    <div class="control-group">
+      <%= f.label :request_date, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.date_select :request_date, :disabled => true%>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :status, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :status, :disabled => true %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :summary, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :summary, :disabled => true, :class => 'input-xxlarge'%>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :description, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :description, :disabled => true, :class => 'input-xxlarge' %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :change_type, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :change_type, :disabled => true %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :assigned_to, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :assigned_to_name, :disabled => true%>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <%= f.label :due_date, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.date_select :due_date, :disabled => true %>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Responses</label>
+      <div class="controls">
+          <ul>
+            <% @change_request.request_responses.each do |request_response| %>
+                <li>
+                  <% if request_response.response != nil %>
+                      <%= User.find_by_id(request_response.user_id).full_name + "'s response was " + request_response.response + "."  %>
+                  <% else %>
+                      <%= User.find_by_id(request_response.user_id).full_name + " has not responded yet." %>
+                  <% end %>
+                </li>
+            <% end %>
+          </ul>
+       </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label"></label>
+      <div class="controls">
+          <div class="btn-toolbar">
+            <% if @change_request.can_edit(@current_user) %>
+                <%= link_to content_tag(:span, 'Edit'), edit_change_request_path(@change_request), :class => 'btn btn-primary' %>
+            <% end %>
+            <% @change_request.available_commands(@current_user).each do |command| %>
+                  <%=  link_to content_tag(:span, command.to_s), edit_change_request_path(:command => command.to_s), :class => 'btn btn-primary' %>
+            <% end %>
+          </div>
+      </div>
     </div>
 <% end %>

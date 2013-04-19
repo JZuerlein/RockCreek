@@ -1,33 +1,44 @@
 <h1>Conversion Rates</h1>
 
-<table>
-  <tr>
-    <td>Month</td><td>Hits to the Homepage</td><td>Submitted Signups</td><td>% converted</td>
-  </tr>
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Month</th><th>Hits to the Homepage</th><th>Submitted Signups</th><th>% converted</th>
+      </tr>
+  </thead>
+
+  <tbody>
   <% @conversions.each do |row| %>
 
-    <tr><td><%= row["month"] %></td><td><%= row["homepage"] %></td><td><%= row["signupsubmits"] %></td>
-    <% if (row["homepage"].to_i > 0) %>
-        <td><%= row["signupsubmits"].to_f / row["homepage"].to_f * 100 %></td>
-    <% else %>
-        <td>0</td>
-    <% end %>
-    </tr>
+      <tr><td><%= row["month"] %></td><td><%= row["homepage"] %></td><td><%= row['signupsubmits'] %></td>
+        <% if (row["homepage"].to_i > 0) %>
+            <td><%= row['signupsubmits'].to_f / row["homepage"].to_f * 100 %></td>
+        <% else %>
+            <td>0</td>
+        <% end %>
+      </tr>
 
   <% end %>
+  </tbody>
+
 </table>
 
 <p></p>
 
 <h1>Users Logged In For The Last 30 Days</h1>
 
-<table>
-  <tr>
-    <td>Tenant_ID</td><td>Num Logged In</td><td>Num Users</td>
-  </tr>
-  <% @usage.each do |row| %>
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Tenant_ID</th><th>Num Logged In</th><th>Num Users</th>
+      </tr>
+  </thead>
 
-      <tr><td><%= row["tenant_id"] %></td><td><%= row["loggedin"] %></td><td><%= row["numusers"] %></td></tr>
+  <tbody>
+      <% @usage.each do |row| %>
 
-  <% end %>
+          <tr><td><%= row["tenant_id"] %></td><td><%= row["loggedin"] %></td><td><%= row["numusers"] %></td></tr>
+
+      <% end %>
+  </tbody>
 </table>

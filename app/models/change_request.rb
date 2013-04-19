@@ -70,7 +70,19 @@ class ChangeRequest < ActiveRecord::Base
       response.response = "Deny"
       response.save
 
+      all_denied = true
+      request_responses.each do |request_response|
+        if (request_response.response != "Deny")
+          all_denied = false
+        end
+      end
+
+      if all_denied
+        self.status = "Denied"
+      end
       self.save
+
+
     end
   end
 
@@ -113,7 +125,7 @@ class ChangeRequest < ActiveRecord::Base
     #request_response will be nil for users who are not part of the change control group but can access show change control
     if request_response != nil
       return true if status == "Submitted" && new_state == "Approved" && request_response.response != "Approved"
-      return true if status == "Submitted" && new_state == "Denied" && request_response.response != "Denied"
+      return true if status == "Submitted" && new_state == "Denied" && request_response.response != "Deny"
     end
 
     return false

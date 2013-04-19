@@ -1,16 +1,20 @@
 <h1>ChangeControl Dashboard</h1>
 
-<table>
-  <tr>
-    <td>Requester</td>
-    <td>Request Date</td>
-    <td>Status</td>
-    <td>Summary</td>
-    <td>Change Type</td>
-    <td>Assigned To</td>
-    <td>Due Date</td>
-  </tr>
+<table class="table table-striped">
+  <thead>
+      <tr>
+        <th>Requester</th>
+        <th>Request Date</th>
+        <th>Status</th>
+        <th>Summary</th>
+        <th>Change Type</th>
+        <th>Assigned To</th>
+        <th>Due Date</th>
+        <th>Actions</th>
+      </tr>
+  </thead>
 
+  <tbody>
   <% @change_requests.each do |change_request| %>
       <tr>
         <td><%= change_request.requester_name %></td>
@@ -20,31 +24,34 @@
         <td><%= change_request.change_type %></td>
         <td><%= change_request.assigned_to_name %></td>
         <td><%= change_request.due_date %></td>
-        <% if allow? "change_requests", "show" %>
-            <td><%= link_to 'Show', change_request %></td>
-        <% end %>
-        <% if allow? "change_requests", "edit", change_request%>
-            <% if change_request.can_edit(@current_user) %>
-                <td><%= link_to 'Edit', edit_change_request_path(change_request) %></td>
+        <td>
+            <% if allow? "change_requests", "show" %>
+                <%= link_to 'Show', change_request, :class => 'btn btn-mini' %>
             <% end %>
-        <% end %>
-        <% if allow? "change_requests", "destroy" %>
-            <td><%= link_to 'Destroy', change_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-        <% if allow? "change_requests", "edit", change_request %>
-             <% change_request.request_responses.each do |request_response| %>
-                <% if request_response.user_id == current_user.id && request_response.response == nil %>
-                    <td><%=  link_to 'Approve', edit_request_response_path(:id => request_response.id, :response => "Approve") %></td>
-                    <td><%=  link_to 'Deny', edit_request_response_path(:id => request_response.id, :response => "Deny") %></td>
-                <% end %>
-                <% if request_response.user_id == current_user.id && request_response.response == "Approve" %>
-                    <td><%=  link_to 'Deny', edit_request_response_path(:id => request_response.id, :response => "Deny") %></td>
-                <% end %>
-                <% if request_response.user_id == current_user.id && request_response.response == "Deny" %>
-                    <td><%=  link_to 'Approve', edit_request_response_path(:id => request_response.id, :response => "Approve") %></td>
+            <% if allow? "change_requests", "edit", change_request%>
+                <% if change_request.can_edit(@current_user) %>
+                    <%= link_to 'Edit', edit_change_request_path(change_request), :class => 'btn btn-mini' %>
                 <% end %>
             <% end %>
-        <% end %>
+            <% if allow? "change_requests", "destroy" %>
+                <%= link_to 'Destroy', change_request, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-mini btn-danger' %>
+            <% end %>
+            <% if allow? "change_requests", "edit", change_request %>
+                <% change_request.request_responses.each do |request_response| %>
+                    <% if request_response.user_id == current_user.id && request_response.response == nil %>
+                        <%=  link_to 'Approve', edit_request_response_path(:id => request_response.id, :response => "Approve"), :class => 'btn btn-mini' %>
+                        <%=  link_to 'Deny', edit_request_response_path(:id => request_response.id, :response => "Deny"), :class => 'btn btn-mini' %>
+                    <% end %>
+                    <% if request_response.user_id == current_user.id && request_response.response == "Approve" %>
+                        <%=  link_to 'Deny', edit_request_response_path(:id => request_response.id, :response => "Deny"), :class => 'btn btn-mini' %>
+                    <% end %>
+                    <% if request_response.user_id == current_user.id && request_response.response == "Deny" %>
+                        <%=  link_to 'Approve', edit_request_response_path(:id => request_response.id, :response => "Approve"), :class => 'btn btn-mini' %>
+                    <% end %>
+                <% end %>
+            <% end %>
+        </td>
       </tr>
   <% end %>
+  </tbody>
 </table>

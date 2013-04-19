@@ -11,12 +11,20 @@
         </div>
     <% end %>
 
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email %>
+    <div class="control-group">
+      <%= f.label :email, :class => "control-label" %>
+      <div class="controls">
+        <%= f.email_field :email %>
+      </div>
     </div>
 
-    <div class="actions">
-      <%= f.submit %>
+    <div class="control-group">
+      <label class="control-label"></label>
+      <div class="controls">
+        <div class="btn-toolbar">
+          <%= f.submit 'Create Invitation', :class => 'btn btn-primary' %>
+        </div>
+      </div>
     </div>
+
 <% end %>
