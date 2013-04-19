@@ -15,7 +15,7 @@
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362715000580" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366407087776" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366408241267" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364959524062" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366300192066" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628590721" ignored="false" />
@@ -51,7 +51,7 @@
     <file path="/home_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1365188013037" ignored="false" />
     <file path="/index.html" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364402157442" ignored="false" />
     <file path="/home.css.scss" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366136290700" ignored="false" />
-    <file path="/signup.js" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366408230851" ignored="false" />
+    <file path="/signup.js" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366408645715" ignored="false" />
     <file path="/20130329154631_remove_credit_card_from_signups.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364572244318" ignored="false" />
     <file path="/20130329155254_remove_cc_from_signups.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364572406902" ignored="false" />
     <file path="/signup.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364958546943" ignored="false" />
@@ -96,7 +96,7 @@
       <file leaf-file-name="signup.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="33" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.5180921">
+            <state line="27" column="90" selection-start="875" selection-end="875" vertical-scroll-proportion="0.34539473">
               <folding />
             </state>
           </provider>
@@ -1032,7 +1032,11 @@
       <created>1366407095078</created>
       <updated>1366407095078</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Trying to fix Stripe again.">
+      <created>1366408244652</created>
+      <updated>1366408244652</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1307,7 +1311,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.5180921">
+        <state line="27" column="90" selection-start="875" selection-end="875" vertical-scroll-proportion="0.34539473">
           <folding />
         </state>
       </provider>

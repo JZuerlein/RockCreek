@@ -35,6 +35,7 @@ $(function() {
                 $("#signup_stripe_token").val(response.id);
                 form.submit();
             } else {
+                alert("response.error.message");
                 $("#stripe-error-message").text(response.error.message);
                 $("#credit-card-errors").show();
                 $("#register_button").attr("disabled", false);
