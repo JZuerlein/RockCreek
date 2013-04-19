@@ -29,6 +29,7 @@ $(function() {
         };
 
         Stripe.createToken(card, function(status, response) {
+            log('made it here');
             if (status === 200) {
                 $("#signup_last_four_digits").val(response.card.last4);
                 $("#signup_stripe_token").val(response.id);
