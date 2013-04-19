@@ -30,6 +30,7 @@ $(function() {
 
         Stripe.createToken(card, function(status, response) {
             if (status === 200) {
+                alert("success");
                 $("#signup_last_four_digits").val(response.card.last4);
                 $("#signup_stripe_token").val(response.id);
                 form.submit();
