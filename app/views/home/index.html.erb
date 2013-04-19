@@ -9,16 +9,16 @@
 <% @plans.each do |plan| %>
     <div id="plan" class="span4 text-center" style="background-color: #eeeeee; padding-bottom: 10px;">
       <div>
-        <h1 style="line-height: 1em"><%= plan.name %></h1>
+        <h2 style="line-height: 1em"><%= plan.name %></h2>
       </div>
       <div class="price" style="border-bottom: 1px dotted #333333; margin-left: 3em; margin-right: 3em;">
-        <h3 style="line-height: 1em"><%= number_to_currency plan.price, :precision => 0 %> / month</h3>
-        <h3 class="text-info" style="line-height: 1em">THIS ISN'T REAL</h3>
+        <h4 style="line-height: 1em"><%= number_to_currency plan.price, :precision => 0 %> / month</h4>
+        <h4 class="text-info" style="line-height: 1em">THIS ISN'T REAL</h4>
       </div>
       <div class="for_users">
-        <h3 style="line-height: 1em">Up to <strong class="text-error"><%= plan.num_users %></strong> users</h3>
-        <h3 style="line-height: 1em"><strong class="text-error">Lots</strong> of storage</h3>
-        <h3 style="line-height: 1em "><strong class="text-error">Limited</strong> functionality</h3>
+        <h4 style="line-height: 1em">Up to <strong class="text-error"><%= plan.num_users %></strong> users</h4>
+        <h4 style="line-height: 1em"><strong class="text-error">Lots</strong> of storage</h4>
+        <h4 style="line-height: 1em "><strong class="text-error">Limited</strong> functionality</h4>
       </div>
       <div class="signup">
         <%=  link_to "Choose Plan", new_signup_path(:plan_id => plan.id), :class => 'btn btn-success btn-large' %>
