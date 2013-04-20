@@ -32,6 +32,7 @@ $(function() {
         alert("Made it here.");
 
         Stripe.createToken(card, function(status, response) {
+            alert("second stop.");
             if (status === 200) {
                 alert("success");
                 $("#signup_last_four_digits").val(response.card.last4);
