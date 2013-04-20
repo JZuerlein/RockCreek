@@ -10,7 +10,7 @@ $(function() {
 
 
     $("form:has(#credit-card)").submit(function() {
-        alert("Made it here.");
+
         var form = this;
         $("#register_button").attr("disabled", true);
         $("#credit-card input, #credit-card select").attr("name", "");
@@ -28,6 +28,8 @@ $(function() {
             expYear:  $("#expires_year").val(),
             cvc:      $("#cvc_code").val()
         };
+
+        alert("Made it here.");
 
         Stripe.createToken(card, function(status, response) {
             if (status === 200) {
