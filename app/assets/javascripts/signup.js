@@ -10,7 +10,7 @@ $(function() {
 
 
     $("form:has(#credit-card)").submit(function() {
-        alert("Made it here.")
+        alert("Made it here.");
         var form = this;
         $("#register_button").attr("disabled", true);
         $("#credit-card input, #credit-card select").attr("name", "");
