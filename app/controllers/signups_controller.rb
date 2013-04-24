@@ -13,6 +13,7 @@ class SignupsController < ApplicationController
   def create
     @signup = Signup.new(params[:signup])
     @user = User.new(:email => params[:signup][:email], :password => params[:signup][:password], :password_confirmation => params[:signup][:password_confirmation])
+    @signup.site_address = @signup.site_address.downcase
 
     if @user.save
       if @signup.save

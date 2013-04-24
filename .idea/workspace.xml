@@ -3,19 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="470f693e-05cd-4a24-b0a4-e25417381381" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/signup.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/signup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/signups_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/signups_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RockCreek.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/session_store.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362598810648" ignored="false" />
     <file path="/sessions_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366389033443" ignored="false" />
-    <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366296400005" ignored="false" />
+    <file path="/fragment.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366823288342" ignored="false" />
     <file path="/signup_confirmations_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364960958546" ignored="false" />
     <file path="/user.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362083112888" ignored="false" />
     <file path="/application_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362625488723" ignored="false" />
     <file path="/invite_users_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362715000580" ignored="false" />
     <file path="/20130204193556_create_invite_users.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1360525451078" ignored="false" />
-    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366426044640" ignored="false" />
+    <file path="/Dummy.txt" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366509204191" ignored="false" />
     <file path="/tenant.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364959524062" ignored="false" />
     <file path="/show.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366300192066" ignored="false" />
     <file path="/email_invitation_request.html.erb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1362628590721" ignored="false" />
@@ -55,7 +56,7 @@
     <file path="/20130329154631_remove_credit_card_from_signups.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364572244318" ignored="false" />
     <file path="/20130329155254_remove_cc_from_signups.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364572406902" ignored="false" />
     <file path="/signup.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364958546943" ignored="false" />
-    <file path="/signups_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1365388043788" ignored="false" />
+    <file path="/signups_controller.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1366823093238" ignored="false" />
     <file path="/20130402160209_fix_column_nameinsignup.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364918597757" ignored="false" />
     <file path="/20130402161428_changestripetokendatatypeinsignups.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364919382673" ignored="false" />
     <file path="/20130402184058_addplan_id_to_signups.rb" changelist="470f693e-05cd-4a24-b0a4-e25417381381" time="1364928089394" ignored="false" />
@@ -84,10 +85,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="signup.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="signup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="62" selection-start="833" selection-end="833" vertical-scroll-proportion="0.20723684">
+            <state line="31" column="61" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="change_request.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/change_request.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="60" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,7 +106,25 @@
       <file leaf-file-name="signups_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/signups_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="68" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/signup.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,25 +133,16 @@
       <file leaf-file-name="signup_confirmations_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="76" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+            <state line="33" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup_confirmation.js.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup_confirmation.js.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stripe.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stripe.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="43" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+            <state line="5" column="29" selection-start="160" selection-end="160" vertical-scroll-proportion="0.17269737">
               <folding />
             </state>
           </provider>
@@ -133,7 +152,36 @@
         <entry file="file://$PROJECT_DIR$/app/views/signups/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="101" selection-start="372" selection-end="372" vertical-scroll-proportion="51.433334">
-              <folding />
+              <folding>
+                <marker date="1366405693931" expanded="true" signature="157:362" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="207:347" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="404:557" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="493:546" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="590:741" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="678:730" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="774:917" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="858:906" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="950:1097" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1036:1086" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1130:1283" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1217:1272" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1316:1495" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1416:1484" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1528:1685" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1619:1674" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1836:2891" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1873:1942" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1913:1929" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="1979:2199" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="2102:2184" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="2236:2456" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="2364:2441" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="2493:2880" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="2615:2865" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="2924:3155" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="2997:3144" placeholder="..." />
+                <marker date="1366405693931" expanded="true" signature="3031:3131" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/change_requests/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
@@ -195,9 +242,10 @@
         <option value="$PROJECT_DIR$/app/views/change_requests/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/signups/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee" />
-        <option value="$PROJECT_DIR$/config/initializers/stripe.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/signups_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/signup.js" />
+        <option value="$PROJECT_DIR$/config/initializers/stripe.rb" />
       </list>
     </option>
   </component>
@@ -209,7 +257,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -282,33 +330,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RockCreek" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RockCreek" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,24 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RockCreek" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RockCreek" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1090,7 +1098,11 @@
       <created>1366426048625</created>
       <updated>1366426048625</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Trying to fix Stripe again.">
+      <created>1366509207522</created>
+      <updated>1366509207522</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1114,7 +1126,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2019544" sideWeight="0.4188901" order="7" side_tool="false" content_ui="tabs" />
@@ -1251,35 +1263,49 @@
           <line>73</line>
           <option name="timeStamp" value="160" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/signups_controller.rb</url>
+          <line>15</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/signups_controller.rb</url>
+          <line>17</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/signups_controller.rb</url>
+          <line>18</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb</url>
+          <line>15</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb</url>
+          <line>16</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb</url>
+          <line>17</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb</url>
+          <line>18</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="195" />
+      <option name="time" value="203" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="60" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/change_requests/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="63" selection-start="2756" selection-end="2756" vertical-scroll-proportion="-12.3">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/permission.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="96" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/change_request.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="94" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1294,13 +1320,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup_confirmation.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="76" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1326,25 +1345,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/signups_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="68" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="43" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1352,7 +1357,36 @@
     <entry file="file://$PROJECT_DIR$/app/views/signups/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="101" selection-start="372" selection-end="372" vertical-scroll-proportion="51.433334">
-          <folding />
+          <folding>
+            <marker date="1366405693931" expanded="true" signature="157:362" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="207:347" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="404:557" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="493:546" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="590:741" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="678:730" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="774:917" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="858:906" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="950:1097" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1036:1086" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1130:1283" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1217:1272" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1316:1495" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1416:1484" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1528:1685" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1619:1674" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1836:2891" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1873:1942" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1913:1929" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="1979:2199" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="2102:2184" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="2236:2456" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="2364:2441" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="2493:2880" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="2615:2865" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="2924:3155" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="2997:3144" placeholder="..." />
+            <marker date="1366405693931" expanded="true" signature="3031:3131" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1363,9 +1397,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/change_request.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="60" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/signup.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/signups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/signup_confirmations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="62" selection-start="833" selection-end="833" vertical-scroll-proportion="0.20723684">
+        <state line="31" column="61" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/stripe.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="29" selection-start="160" selection-end="160" vertical-scroll-proportion="0.17269737">
           <folding />
         </state>
       </provider>
